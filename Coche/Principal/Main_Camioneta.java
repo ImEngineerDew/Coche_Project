@@ -1,7 +1,8 @@
 package com.toadsdewin.CocheProyecto.Coche.Principal;
+import Coche_Proyecto.Coche.Coche;
 import java.util.Scanner;
 
-public class Main_Camioneta extends com.toadsdewin.Coche.Carro
+public class Main_Camioneta extends Coche
 {
     private int capacidad;
     private String tipo_carga;
