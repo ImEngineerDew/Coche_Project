@@ -1,6 +1,8 @@
+package Coche_Proyecto.Coche.Principal;
+import Coche_Proyecto.Coche.Coche;
 import java.util.Scanner;
 
-public class Main_Carro extends com.toadsdewin.Coche.Carro
+public class Main_Carro extends Coche
 {
     public Main_Carro()
     {
