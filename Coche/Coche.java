@@ -9,7 +9,7 @@ public abstract class Coche
     private String marca;
     private String asientos;
 
-    public abstract Coche()
+    public Coche()
     {
         numero_puerta = 4;
         numero_llantas = 4;
@@ -29,7 +29,6 @@ public abstract class Coche
         this.asientos       = asientos;
     }
     /*Condicional para verificar si tiene o no asientos de cuero*/
-
     public abstract boolean tieneAsientos(String asientos);
 
     public abstract int getNumero_puerta();
@@ -38,24 +37,14 @@ public abstract class Coche
 
     public abstract int getNumero_llantas();
 
-    public void setNumero_llantas(int numero_llantas) {
-        this.numero_llantas = numero_llantas;
-    }
+    public abstract void setNumero_llantas(int numero_llantas) ;
 
-    public String getTipo_motor() {
-        return tipo_motor;
-    }
+    public abstract String getTipo_motor();
 
-    public void setTipo_motor(String tipo_motor) {
-        this.tipo_motor = tipo_motor;
-    }
+    public abstract void setTipo_motor(String tipo_motor);
 
-    public String getMarca() {
-        return marca;
-    }
+    public abstract String getMarca();
 
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
+    public abstract void setMarca(String marca);
 
 }
