@@ -1,6 +1,6 @@
 package Coche_Proyecto.Coche;
 
-public class Coche
+public abstract class Coche
 {
     private int numero_puerta;
     private int numero_llantas;
@@ -9,7 +9,7 @@ public class Coche
     private String marca;
     private String asientos;
 
-    public Coche()
+    public abstract Coche()
     {
         numero_puerta = 4;
         numero_llantas = 4;
@@ -30,29 +30,13 @@ public class Coche
     }
     /*Condicional para verificar si tiene o no asientos de cuero*/
 
-    public boolean tieneAsientos(String asientos)
-    {
-        if(asientos.equals("si"))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    public abstract boolean tieneAsientos(String asientos);
 
-    public int getNumero_puerta() {
-        return numero_puerta;
-    }
+    public abstract int getNumero_puerta();
 
-    public void setNumero_puerta(int numero_puerta) {
-        this.numero_puerta = numero_puerta;
-    }
+    public abstract void setNumero_puerta(int numero_puerta);
 
-    public int getNumero_llantas() {
-        return numero_llantas;
-    }
+    public abstract int getNumero_llantas();
 
     public void setNumero_llantas(int numero_llantas) {
         this.numero_llantas = numero_llantas;
