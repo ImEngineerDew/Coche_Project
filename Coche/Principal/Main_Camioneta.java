@@ -77,6 +77,6 @@ public class Main_Camioneta extends Coche
     @Override
     public void getInfo()
     {
-
+        System.out.println("This is just a test from the implementation about of abstract class");
     }
 }
