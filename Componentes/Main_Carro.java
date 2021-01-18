@@ -3,13 +3,28 @@ import java.util.Scanner;
 
 public class Main_Carro extends Coche
 {
+    private String esPublico;
+
     public Main_Carro()
     {
         super();
     }
-    public Main_Carro(String asientos, int numero_puerta, int cant_asientos, int numero_llantas, String tipo_motor)
+    public Main_Carro(String asientos, int numero_puerta, int numero_llantas, String tipo_motor,String marca,String esPublico)
     {
+        super(numero_puerta,numero_llantas,tipo_motor,marca,asientos);
+        this.esPublico = esPublico;
+    }
 
+    public boolean servicioPublico(String esPublico)
+    {
+        if (esPublico.equals("si"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void mostrarCarro()
