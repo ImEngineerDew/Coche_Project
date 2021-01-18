@@ -43,10 +43,10 @@ public class Main_Camioneta extends Coche
        Main_Camioneta foton = new Main_Camioneta();
 
        System.out.println("La camioneta tiene asientos de cuero: "); String asientos = objeto.nextLine();
-       System.out.println("Ingrese la marca de la camioneta: "); String marca_camioneta = objeto.nextLine();
-       System.out.println("Ingrese el tipo de motor: ");         String combustible     = objeto.nextLine();
-       System.out.println("Ingrese el tipo de carga: ");         String load            = objeto.nextLine();
-       System.out.println("Ingrese la capacidad de carga: ");    int capacidad_carga = objeto.nextInt();
+       System.out.println("Ingrese la marca de la camioneta: ");     String marca_camioneta = objeto.nextLine();
+       System.out.println("Ingrese el tipo de motor: ");             String combustible     = objeto.nextLine();
+       System.out.println("Ingrese el tipo de carga: ");             String load            = objeto.nextLine();
+       System.out.println("Ingrese la capacidad de carga: ");        int capacidad_carga = objeto.nextInt();
 
        /*Espacio para almacenar los datos en los setters*/
        foton.setMarca(marca_camioneta);
