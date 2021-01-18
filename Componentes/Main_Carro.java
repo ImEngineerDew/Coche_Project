@@ -11,7 +11,7 @@ public class Main_Carro extends Coche
     {
 
     }
-    public static void main(String[] args)
+    public void mostrarCarro()
     {
         Main_Carro renault = new Main_Carro();
 

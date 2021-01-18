@@ -37,7 +37,7 @@ public class Main_Camioneta extends Coche
        this.tipo_carga = tipo_carga;
    }
 
-   public static void main(String[] args)
+   public void mostrarCamioneta()
    {
        Scanner objeto = new Scanner(System.in);
        Main_Camioneta foton = new Main_Camioneta();
