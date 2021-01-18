@@ -1,9 +1,11 @@
 package Coche_Proyecto.Componentes;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main_Carro extends Coche
 {
     private String esPublico;
+    ArrayList<Main_Carro> coche = new ArrayList <>();
     
     public Main_Carro()
     {
