@@ -1,6 +1,6 @@
 package Coche_Proyecto.MenuUI;
 import java.util.ArrayList;
-import
+
 
 public class arrayTesting
 {
@@ -9,5 +9,9 @@ public class arrayTesting
         ArrayList <String> lista = new ArrayList<>();
 
         lista.add("Texto");
+        lista.add("Prueba");
+        lista.add("Cadenas");
+        
+        System.out.println(lista);
     }
 }
