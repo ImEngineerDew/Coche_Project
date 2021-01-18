@@ -16,19 +16,23 @@ public class menuMain
         Main_Camioneta camioneta = new Main_Camioneta();
         Main_Carro carro = new Main_Carro();
 
-        Scanner lista = new Scanner(System.in);
-        int opcion = lista.nextInt();
+        int opcion = 0;
 
         do
         {
+            Scanner lista = new Scanner(System.in);
+            opcion = lista.nextInt();
+
             switch(opcion)
             {
                 case 1:
-                carro.mostrarCarro();
+                    opcion = 0;
+                    carro.mostrarCarro();
                 break;
 
                 case 2:
-                camioneta.mostrarCamioneta();
+                    opcion=0;
+                    camioneta.mostrarCamioneta();
                 break;
 
                 default:
