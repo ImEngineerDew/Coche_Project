@@ -1,5 +1,4 @@
-package Coche_Proyecto.Coche.Componentes;
-import Coche_Proyecto.Coche.Coche;
+package Coche_Proyecto.Componentes;
 import java.util.Scanner;
 
 public class Main_Camioneta extends Coche

@@ -1,4 +1,4 @@
-package Coche_Proyecto.Coche;
+package Coche_Proyecto.Componentes;
 
 public abstract class Coche
 {
