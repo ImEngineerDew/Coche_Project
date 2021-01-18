@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Main_Camioneta extends Coche implements numeroPasajeros
 {
    private int capacidad;
+   private int pasajeros;
    private String tipo_carga;
 
    public Main_Camioneta()
@@ -40,6 +41,7 @@ public class Main_Camioneta extends Coche implements numeroPasajeros
    {
        return pasajeros;
    }
+
    public void mostrarCamioneta()
    {
        Scanner objeto = new Scanner(System.in);
@@ -49,6 +51,7 @@ public class Main_Camioneta extends Coche implements numeroPasajeros
        System.out.println("Ingrese la marca de la camioneta: ");     String marca_camioneta = objeto.nextLine();
        System.out.println("Ingrese el tipo de motor: ");             String combustible     = objeto.nextLine();
        System.out.println("Ingrese el tipo de carga: ");             String load            = objeto.nextLine();
+       System.out.println("Ingrese el numero de acompañantes: ");    int numero_acompañantes = objeto.nextInt();
        System.out.println("Ingrese la capacidad de carga: ");        int capacidad_carga = objeto.nextInt();
 
        /*Espacio para almacenar los datos en los setters*/
@@ -56,6 +59,7 @@ public class Main_Camioneta extends Coche implements numeroPasajeros
        foton.setTipo_motor(combustible);
        foton.setCapacidad(capacidad_carga);
        foton.setTipo_carga(load);
+       foton.numeroPasajeros(numero_acompañantes);
 
        /*Comparativa para imprimir datos*/
        if(foton.asientosDeCuero(asientos)== true)
@@ -64,6 +68,7 @@ public class Main_Camioneta extends Coche implements numeroPasajeros
           System.out.println("Capacidad: "+foton.getCapacidad());
           System.out.println("Combustible: "+foton.getTipo_motor());
           System.out.println("Tipo de carga: "+foton.getTipo_carga());
+          System.out.println("Pasajeros: "+foton.numeroPasajeros(numero_acompañantes));
           System.out.println("La camioneta tiene asientos de cuero");
        }
        else
@@ -72,6 +77,7 @@ public class Main_Camioneta extends Coche implements numeroPasajeros
           System.out.println("Capacidad: "+foton.getCapacidad());
           System.out.println("Combustible: "+foton.getTipo_motor());
           System.out.println("Tipo de carga: "+foton.getTipo_carga());
+          System.out.println("Pasajeros: "+foton.numeroPasajeros(numero_acompañantes));
           System.out.println("La camioneta no tiene asientos de cuero");
          }
        }
