@@ -1,7 +1,7 @@
 package Coche_Proyecto.Componentes;
 import java.util.Scanner;
 
-public class Main_Camioneta extends Coche
+public class Main_Camioneta extends Coche implements numeroPasajeros
 {
    private int capacidad;
    private String tipo_carga;
@@ -9,12 +9,12 @@ public class Main_Camioneta extends Coche
    public Main_Camioneta()
    {
       super();
-      this.capacidad = 4;
+      this.capacidad = 4;               /*Capacidad en volumen*/
       this.tipo_carga = "Ganado";
    }
-   public Main_Camioneta(int numero_puerta,int numero_llantas,int cant_asientos,String tipo_motor, String marca, String asientos, int capacidad, String tipo_carga)
+   public Main_Camioneta(int numero_puerta,int numero_llantas,String tipo_motor, String marca, String asientos, int capacidad, String tipo_carga)
    {
-       super(numero_puerta,numero_llantas,cant_asientos,tipo_motor,marca,asientos);
+       super(numero_puerta,numero_llantas,tipo_motor,marca,asientos);
        this.capacidad  = capacidad;
        this.tipo_carga = tipo_carga;
    }
@@ -36,7 +36,10 @@ public class Main_Camioneta extends Coche
    {
        this.tipo_carga = tipo_carga;
    }
-
+   public int numeroPasajeros(int pasajeros)
+   {
+       return pasajeros;
+   }
    public void mostrarCamioneta()
    {
        Scanner objeto = new Scanner(System.in);

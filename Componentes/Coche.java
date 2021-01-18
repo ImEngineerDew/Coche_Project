@@ -1,10 +1,9 @@
 package Coche_Proyecto.Componentes;
 
-public abstract class Coche implements tieneAsientos
+public abstract class Coche implements tieneAsientos, numeroPasajeros
 {
     private int numero_puerta;
     private int numero_llantas;
-    private int cant_asientos;
     private String tipo_motor;
     private String marca;
     private String asientos;
@@ -13,17 +12,15 @@ public abstract class Coche implements tieneAsientos
     {
         numero_puerta = 4;
         numero_llantas = 4;
-        cant_asientos = 5;
         tipo_motor = "Gasolina";
         marca = "Renault";
         asientos = "si";
     }
 
-    public Coche(int numero_puerta,int numero_llantas,int cant_asientos,String tipo_motor, String marca, String asientos)
+    public Coche(int numero_puerta,int numero_llantas,String tipo_motor, String marca, String asientos)
     {
         this.numero_puerta  = numero_puerta;
         this.numero_llantas = numero_llantas;
-        this.cant_asientos  = cant_asientos;
         this.tipo_motor     = tipo_motor;
         this.marca          = marca;
         this.asientos       = asientos;
@@ -40,6 +37,10 @@ public abstract class Coche implements tieneAsientos
         {
             return false;
         }
+    }
+    public int numeroPasajeros(int pasajeros)
+    {
+        return pasajeros;
     }
 
     public int getNumero_puerta() {
