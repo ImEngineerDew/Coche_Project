@@ -55,7 +55,7 @@ public class Main_Camioneta extends Coche
        foton.setTipo_carga(load);
 
        /*Comparativa para imprimir datos*/
-       if(foton.tieneAsientos(asientos)== true)
+       if(foton.asientosDeCuero(asientos)== true)
        {
           System.out.println("Marca camioneta: "+foton.getMarca());
           System.out.println("Capacidad: "+foton.getCapacidad());

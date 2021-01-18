@@ -24,13 +24,13 @@ public class Main_Carro extends Coche
         renault.setMarca(marca);
         renault.setTipo_motor(motor);
 
-        if(renault.tieneAsientos(entrada)== true)
+        if(renault.asientosDeCuero(entrada)== true)
         {
             System.out.println("Marca: "+renault.getMarca());
             System.out.println("Tipo de motor: "+renault.getTipo_motor());
             System.out.println("El coche tiene asientos de cuero");
         }
-        else if(renault.tieneAsientos(entrada)== false)
+        else if(renault.asientosDeCuero(entrada)== false)
         {
             System.out.println("Marca: "+renault.getMarca());
             System.out.println("Tipo de motor: "+renault.getTipo_motor());

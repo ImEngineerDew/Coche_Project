@@ -1,6 +1,6 @@
 package Coche_Proyecto.Componentes;
 
-public abstract class Coche
+public abstract class Coche implements tieneAsientos
 {
     private int numero_puerta;
     private int numero_llantas;
@@ -30,7 +30,7 @@ public abstract class Coche
     }
     /*Condicional para verificar si tiene o no asientos de cuero*/
 
-    public boolean tieneAsientos(String asientos)
+    public boolean asientosDeCuero(String asientos)
     {
         if(asientos.equals("si"))
         {
