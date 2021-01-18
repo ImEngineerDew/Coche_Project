@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main_Carro extends Coche
 {
     private String esPublico;
-
+    
     public Main_Carro()
     {
         super();
@@ -14,7 +14,7 @@ public class Main_Carro extends Coche
         super(numero_puerta,numero_llantas,tipo_motor,marca,asientos);
         this.esPublico = esPublico;
     }
-
+    
     public boolean servicioPublico(String esPublico)
     {
         if (esPublico.equals("si"))
