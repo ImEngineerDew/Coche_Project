@@ -1,4 +1,4 @@
-package Coche_Proyecto.Coche.Principal;
+package Coche_Proyecto.Coche.Componentes;
 import Coche_Proyecto.Coche.Coche;
 import java.util.Scanner;
 
