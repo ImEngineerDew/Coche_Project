@@ -1,7 +1,7 @@
 package Coche_Proyecto.Componentes;
 import java.util.Scanner;
 
-public class Main_Camioneta extends Coche implements numeroPasajeros
+public class Main_Camioneta extends Coche
 {
    private int capacidad;
    private int pasajeros;
@@ -37,6 +37,7 @@ public class Main_Camioneta extends Coche implements numeroPasajeros
    {
        this.tipo_carga = tipo_carga;
    }
+   @Override
    public int numeroPasajeros(int pasajeros)
    {
        return pasajeros;
