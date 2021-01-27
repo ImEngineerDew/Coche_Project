@@ -66,11 +66,9 @@ public class Main_Camioneta extends Coche
        cocheModelo.add(foton);
        cocheModelo.add(renault);
 
-       for (int i=0; i<cocheModelo.size(); i++)
-       {
-           Coche listado = cocheModelo.get(i);
-           System.out.println(listado);
-       }
+       System.out.println(cocheModelo.get(0));
+
+
 
        /*
        System.out.println("La camioneta tiene asientos de cuero: "); String asientos = objeto.nextLine();
