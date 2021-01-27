@@ -1,11 +1,14 @@
 package Coche_Proyecto.Componentes;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main_Camioneta extends Coche
 {
    private int capacidad;
    private int pasajeros;
    private String tipo_carga;
+
+   ArrayList <Coche> cocheModelo = new ArrayList<>();
 
    public Main_Camioneta()
    {
