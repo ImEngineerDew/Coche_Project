@@ -60,38 +60,4 @@ public class Main_Camioneta extends Coche
    public void mostrarCamioneta()
    {
        Scanner objeto = new Scanner(System.in);
-
-       System.out.println("Ingrese el numero de puertas: ");                        int puertas = objeto.nextInt();
-       System.out.println("Ingrese el numero de llantas: ");                        int llantas = objeto.nextInt();
-       System.out.println("Ingrese el tipo de motor: ");                            String combustible = objeto.nextLine();
-       System.out.println("¿La camioneta tiene asientos de cuero: ?");              String asientos = objeto.nextLine();
-       Main_Camioneta foton = new  Main_Camioneta(puertas,llantas,combustible,);
-
-       //Espacio para almacenar los datos en los setters
-       foton.setMarca(marca_camioneta);
-       foton.setTipo_motor(combustible);
-       foton.setCapacidad(capacidad_carga);
-       foton.setTipo_carga(load);
-       foton.numeroPasajeros(numero_acompañantes);
-
-       //Comparativa para imprimir datos
-       if(foton.asientosDeCuero(asientos)== true)
-       {
-          System.out.println("Marca camioneta: "+foton.getMarca());
-          System.out.println("Capacidad: "+foton.getCapacidad());
-          System.out.println("Combustible: "+foton.getTipo_motor());
-          System.out.println("Tipo de carga: "+foton.getTipo_carga());
-          System.out.println("Pasajeros: "+foton.numeroPasajeros(numero_acompañantes));
-          System.out.println("La camioneta tiene asientos de cuero");
-       }
-       else
-       {
-          System.out.println("Marca camioneta: "+foton.getMarca());
-          System.out.println("Capacidad: "+foton.getCapacidad());
-          System.out.println("Combustible: "+foton.getTipo_motor());
-          System.out.println("Tipo de carga: "+foton.getTipo_carga());
-          System.out.println("Pasajeros: "+foton.numeroPasajeros(numero_acompañantes));
-          System.out.println("La camioneta no tiene asientos de cuero");
-         }
-       }
 }
