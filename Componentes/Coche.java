@@ -2,28 +2,28 @@ package Coche_Proyecto.Componentes;
 
 public abstract class Coche implements tieneAsientos, numeroPasajeros
 {
-    private int numero_puerta;
-    private int numero_llantas;
-    private String tipo_motor;
-    private String marca;
-    private String asientos;
+    private int doorQuantity;
+    private int tiresQuantity;
+    private String fuelMotor;
+    private String brandCar;
+    private String seatsLeather;
 
     public Coche()
     {
-        numero_puerta = 4;
-        numero_llantas = 4;
-        tipo_motor = "Gasolina";
-        marca = "Renault";
-        asientos = "si";
+        doorQuantity = 4;
+        tiresQuantity = 4;
+        fuelMotor= "Gasolina";
+        brandCar = "Renault";
+        seatsLeather = "si";
     }
 
-    public Coche(int numero_puerta,int numero_llantas,String tipo_motor, String marca, String asientos)
+    public Coche(int doorQuantity,int tiresQuantity,String fuelMotor, String brandCar, String seatsLeather)
     {
-        this.numero_puerta  = numero_puerta;
-        this.numero_llantas = numero_llantas;
-        this.tipo_motor     = tipo_motor;
-        this.marca          = marca;
-        this.asientos       = asientos;
+        this.doorQuantity  = doorQuantity;
+        this.tiresQuantity = tiresQuantity;
+        this.fuelMotor     = fuelMotor;
+        this.brandCar      = brandCar;
+        this.seatsLeather  = seatsLeather;
     }
     /*Condicional para verificar si tiene o no asientos de cuero*/
 

@@ -60,4 +60,6 @@ public class Main_Camioneta extends Coche
    public void mostrarCamioneta()
    {
        Scanner objeto = new Scanner(System.in);
+
+
 }
