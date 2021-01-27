@@ -60,23 +60,12 @@ public class Main_Camioneta extends Coche
    public void mostrarCamioneta()
    {
        Scanner objeto = new Scanner(System.in);
-       Main_Camioneta foton = new Main_Camioneta(4, 4, "Gasolina", "Foton", "si", 4000, "Frutas");
-       Main_Camioneta renault = new Main_Camioneta(4, 4, "Gas natural", "Renault", "no", 4000, "Ganado");
 
-       cocheModelo.add(foton);
-       cocheModelo.add(renault);
-
-       System.out.println(cocheModelo.get(0));
-
-
-
-       /*
-       System.out.println("La camioneta tiene asientos de cuero: "); String asientos = objeto.nextLine();
-       System.out.println("Ingrese la marca de la camioneta: ");     String marca_camioneta = objeto.nextLine();
-       System.out.println("Ingrese el tipo de motor: ");             String combustible     = objeto.nextLine();
-       System.out.println("Ingrese el tipo de carga: ");             String load            = objeto.nextLine();
-       System.out.println("Ingrese el numero de acompañantes: ");    int numero_acompañantes = objeto.nextInt();
-       System.out.println("Ingrese la capacidad de carga: ");        int capacidad_carga = objeto.nextInt();
+       System.out.println("Ingrese el numero de puertas: ");                        int puertas = objeto.nextInt();
+       System.out.println("Ingrese el numero de llantas: ");                        int llantas = objeto.nextInt();
+       System.out.println("Ingrese el tipo de motor: ");                            String combustible = objeto.nextLine();
+       System.out.println("¿La camioneta tiene asientos de cuero: ?");              String asientos = objeto.nextLine();
+       Main_Camioneta foton = new  Main_Camioneta(puertas,llantas,combustible,);
 
        //Espacio para almacenar los datos en los setters
        foton.setMarca(marca_camioneta);
@@ -105,7 +94,4 @@ public class Main_Camioneta extends Coche
           System.out.println("La camioneta no tiene asientos de cuero");
          }
        }
-       */
-
-   }
 }
