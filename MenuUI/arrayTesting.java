@@ -9,6 +9,11 @@ public class arrayTesting
     private int ageData;
     ArrayList <arrayTesting> personalData = new ArrayList<>();
 
+    public void addGuy(arrayTesting agregado)
+    {
+        personalData.add(agregado);
+    }
+
     public arrayTesting ()
     {
         nameData= "John";
@@ -21,11 +26,6 @@ public class arrayTesting
         this.nameData = nameData;
         this.surnameData = surnameData;
         this.ageData = ageData;
-    }
-
-    public void addGuy(arrayTesting agregado)
-    {
-        personalData.add(agregado);
     }
 
     public String getNameData()
