@@ -27,9 +27,9 @@ public abstract class Coche implements tieneAsientos, numeroPasajeros
     }
     /*Condicional para verificar si tiene o no asientos de cuero*/
 
-    public boolean asientosDeCuero(String asientos)
+    public boolean asientosDeCuero(String seatsLeather)
     {
-        if(asientos.equals("si"))
+        if(seatsLeather.equals("si"))
         {
             return true;
         }
@@ -38,42 +38,42 @@ public abstract class Coche implements tieneAsientos, numeroPasajeros
             return false;
         }
     }
-    public int numeroPasajeros(int pasajeros)
+    public int numeroPasajeros(int passengersQuantity)
     {
-        return pasajeros;
+        return passengersQuantity;
     }
 
-    public int getNumero_puerta() {
-        return numero_puerta;
+    public int getDoorQuantity() {
+        return doorQuantity;
     }
 
-    public void setNumero_puerta(int numero_puerta) {
-        this.numero_puerta = numero_puerta;
+    public void setDoorQuantity(int doorQuantity) {
+        this.doorQuantity = doorQuantity;
     }
 
-    public int getNumero_llantas() {
-        return numero_llantas;
+    public int getTiresQuantity() {
+        return tiresQuantity;
     }
 
-    public void setNumero_llantas(int numero_llantas) {
-        this.numero_llantas = numero_llantas;
+    public void setTiresQuantity(int tiresQuantity) {
+        this.tiresQuantity = tiresQuantity;
     }
 
-    public String getTipo_motor() {
-        return tipo_motor;
+    public String getFuelMotor() {
+        return fuelMotor;
     }
 
-    public void setTipo_motor(String tipo_motor) {
-        this.tipo_motor = tipo_motor;
+    public void setFuelMotor(String fuelMotor) {
+        this.fuelMotor = fuelMotor;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getBrandCar() {
+        return brandCar;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setBrandCar(String brandCar)
+    {
+        this.brandCar = brandCar;
     }
-
     public abstract void getInfo();
 }
