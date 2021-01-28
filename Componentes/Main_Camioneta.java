@@ -7,9 +7,9 @@ public class Main_Camioneta extends Coche {
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
 
-    ArrayList<Coche> cocheModelo = new ArrayList<>();
+    ArrayList<Main_Camioneta> cocheModelo = new ArrayList<>();
 
-    public void addCamioneta(Coche agregado) {
+    public void addCamioneta(Main_Camioneta agregado) {
         cocheModelo.add(agregado);
     }
 
@@ -52,36 +52,32 @@ public class Main_Camioneta extends Coche {
     }
 
     @Override
-    public void getInfo() {
+    public void getInfo()
+    {
     }
 
     public void mostrarCamioneta() 
     {
         Scanner objeto = new Scanner(System.in);
 
-        System.out.println("Please write the number of the doors: ");       int doors = objeto.nextInt();
-        System.out.println("Please write the number of the tires  ");       int tires = objeto.nextInt();
         System.out.println("Please write the type of the fuel: ");          String fuel = objeto.nextLine();
         System.out.println("Write your brand car: ");                       String brand= objeto.nextLine();
         System.out.println("Has the truck the leather seats? :");           String leather = objeto.nextLine();
-        System.out.println("What's the capacity of this truck?: ");         int caps = objeto.nextInt();
         System.out.println("What kind of load do you support your car?: "); String loadKind = objeto.nextLine();
+        System.out.println("Please write the number of the doors: ");       int doors = objeto.nextInt();
+        System.out.println("Please write the number of the tires  ");       int tires = objeto.nextInt();
+        System.out.println("What's the capacity of this truck?: ");         int caps = objeto.nextInt();
 
-        Main_Camioneta camioneta = new Main_Camioneta(doors,tires,fuel,brand,leather,caps,loadKind)
+        Main_Camioneta camioneta = new Main_Camioneta(doors,tires,fuel,brand,leather,caps,loadKind);
+        StringBuilder listado = new StringBuilder();
 
-        if(camioneta.asientosDeCuero(leather)==true)
+        cocheModelo.add(camioneta);
+
+        for(Main_Camioneta camionetas: cocheModelo)
         {
-            cocheModelo.add(camioneta);
-            System.out.println("The truck has leather seats!");
+            listado.append("Brand: "+camionetas.getBrandCar()+" Fuel type: "+camionetas.getFuelMotor());
+            System.out.println(listado.toString());
         }
-        else
-        {
-            cocheModelo.add(camioneta);
-            System.out.println("The tuck hasn't leather seats!");
-        }
-        
-
-
 
     }
 }
