@@ -7,7 +7,7 @@ public class Main_Camioneta extends Coche {
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
 
-    ArrayList<Main_Camioneta> cocheModelo = new ArrayList<>();
+    private ArrayList<Main_Camioneta> cocheModelo = new ArrayList<>();
 
     public void addCamioneta(Main_Camioneta agregado) {
         cocheModelo.add(agregado);
