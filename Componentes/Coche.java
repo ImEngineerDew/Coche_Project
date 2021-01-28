@@ -1,6 +1,6 @@
 package Coche_Proyecto.Componentes;
 
-public abstract class Coche implements tieneAsientos, numeroPasajeros
+public abstract class Coche implements tieneAsientos, passengersQuantity
 {
     private int doorQuantity;
     private int tiresQuantity;
@@ -75,5 +75,6 @@ public abstract class Coche implements tieneAsientos, numeroPasajeros
     {
         this.brandCar = brandCar;
     }
+
     public abstract void getInfo();
 }
