@@ -55,7 +55,18 @@ public class Main_Camioneta extends Coche {
     public void getInfo() {
     }
 
-    public void mostrarCamioneta() {
+    public void mostrarCamioneta() 
+    {
         Scanner objeto = new Scanner(System.in);
+
+        System.out.println("Please write the number of the doors: ");       int doors = objeto.nextInt();
+        System.out.println("Please write the number of the tires  ");       int tires = objeto.nextInt();
+        System.out.println("Please write the type of the fuel: ");          String fuel = objeto.nextLine();
+        System.out.println("Write your brand car: ");                       String brand= objeto.nextLine();
+        System.out.println("Has the truck the leather seats? :");           String leather = objeto.nextLine();
+        System.out.println("What's the capacity of this truck?: ");         int caps = objeto.nextInt();
+        System.out.println("What kind of load do you support your car?: "); String loadKind = objeto.nextLine();
+        
+        Main_Camioneta camioneta = new Main_Camioneta(doors,tires,fuel,brand,leather,caps,loadKind);
     }
 }

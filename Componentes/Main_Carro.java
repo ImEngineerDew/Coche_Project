@@ -50,6 +50,7 @@ public class Main_Carro extends Coche
     {
         Main_Carro renault = new Main_Carro();
         Scanner objeto = new Scanner(System.in);
+
     }
 
     @Override
