@@ -66,7 +66,14 @@ public class Main_Camioneta extends Coche {
         System.out.println("Has the truck the leather seats? :");           String leather = objeto.nextLine();
         System.out.println("What's the capacity of this truck?: ");         int caps = objeto.nextInt();
         System.out.println("What kind of load do you support your car?: "); String loadKind = objeto.nextLine();
+
+        if(tieneAsientos.equals(leather))
+        {
+            
+        }
         
         Main_Camioneta camioneta = new Main_Camioneta(doors,tires,fuel,brand,leather,caps,loadKind);
+
+
     }
 }
