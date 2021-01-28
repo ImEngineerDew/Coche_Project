@@ -67,12 +67,27 @@ public class Main_Camioneta extends Coche {
         Main_Camioneta camioneta = new Main_Camioneta(doors,tires,fuel,brand,leather,caps,loadKind);
         StringBuilder listado = new StringBuilder();
 
-        cocheModelo.add(camioneta);
-
-        for(Main_Camioneta camionetas: cocheModelo)
+        if(camioneta.asientosDeCuero(leather)== true)
         {
-            listado.append("Brand: "+camionetas.getBrandCar()+" Fuel type: "+camionetas.getFuelMotor());
-            System.out.println(listado.toString());
+            cocheModelo.add(camioneta);
+
+            for(Main_Camioneta camionetas: cocheModelo)
+            {
+                listado.append("Brand: "+camionetas.getBrandCar()+" Fuel type: "+camionetas.getFuelMotor());
+                System.out.println(listado.toString());
+                System.out.println("The truck has leather seats!");
+            }
+        }
+        else
+        {
+            cocheModelo.add(camioneta);
+
+            for(Main_Camioneta camionetas: cocheModelo)
+            {
+                listado.append("Brand: "+camionetas.getBrandCar()+" Fuel type: "+camionetas.getFuelMotor());
+                System.out.println(listado.toString());
+                System.out.println("Trhe truck hasn't leather seats!");
+            }
         }
     }
 }
