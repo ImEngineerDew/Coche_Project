@@ -81,6 +81,14 @@ public class arrayTesting
             {
                 break;
             }
+            else if (surname.equalsIgnoreCase("exit"))
+            {
+                break;
+            }
+            else if(age==0)
+            {
+                break;
+            }
             personalData.add(modelo);
         }
 
