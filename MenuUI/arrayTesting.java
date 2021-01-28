@@ -7,6 +7,7 @@ public class arrayTesting
     private String nameData;
     private String surnameData;
     private int ageData;
+    ArrayList <arrayTesting> personalData = new ArrayList<>();
 
     public arrayTesting ()
     {
@@ -20,6 +21,11 @@ public class arrayTesting
         this.nameData = nameData;
         this.surnameData = surnameData;
         this.ageData = ageData;
+    }
+
+    public void addGuy(arrayTesting agregado)
+    {
+        personalData.add(agregado);
     }
 
     public String getNameData()
@@ -43,12 +49,19 @@ public class arrayTesting
     {
         this.surnameData = surnameData;
     }
+    public void setAgeData(int ageData)
+    {
+        this.ageData = ageData;
+    }
 
 
     public static void main(String args[])
     {
-        ArrayList <String> cadenas = new ArrayList<>();
         Scanner objeto  = new Scanner(System.in);
+        ArrayList <arrayTesting> personalData = new ArrayList<>();
+        String name;
+        String surname;
+        int age;
 
         boolean isRunnable = true;
         System.out.println("Running...");
@@ -56,20 +69,24 @@ public class arrayTesting
         while(isRunnable)
         {
             System.out.println("Please write your name: ");
-            String name = objeto.nextLine();
+            name = objeto.nextLine();
+            System.out.println("Please write your surname: ");
+            surname = objeto.nextLine();
+            System.out.println("Please write your age: ");
+            age = objeto.nextInt();
+
+            arrayTesting modelo = new arrayTesting(name,surname,age);
 
             if(name.equalsIgnoreCase("exit"))
             {
                 break;
             }
-            cadenas.add(name);
+            personalData.add(modelo);
         }
 
-        for(String recorrido: cadenas)
+        for(arrayTesting recorrido: personalData)
         {
-            System.out.println(cadenas.toString());
+            System.out.println(personalData.toString());
         }
-
-
     }
 }
