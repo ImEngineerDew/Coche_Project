@@ -57,44 +57,6 @@ public class arrayTesting
 
     public static void main(String args[])
     {
-        Scanner objeto  = new Scanner(System.in);
-        ArrayList <arrayTesting> personalData = new ArrayList<>();
-        String name;
-        String surname;
-        int age;
-
-        boolean isRunnable = true;
-        System.out.println("Running...");
-
-        while(isRunnable)
-        {
-            System.out.println("Please write your name: ");
-            name = objeto.nextLine();
-            System.out.println("Please write your surname: ");
-            surname = objeto.nextLine();
-            System.out.println("Please write your age: ");
-            age = objeto.nextInt();
-
-            arrayTesting modelo = new arrayTesting(name,surname,age);
-
-            if(name.equalsIgnoreCase("exit"))
-            {
-                break;
-            }
-            else if (surname.equalsIgnoreCase("exit"))
-            {
-                break;
-            }
-            else if(age==0)
-            {
-                break;
-            }
-            personalData.add(modelo);
-        }
-
-        for(arrayTesting recorrido: personalData)
-        {
-            System.out.println(personalData.toString());
-        }
+        //White space for checking and analyze the code
     }
 }
