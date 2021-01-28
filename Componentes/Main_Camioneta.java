@@ -54,10 +54,6 @@ public class Main_Camioneta extends Coche {
     @Override
     public void getInfo()
     {
-    }
-
-    public void mostrarCamioneta() 
-    {
         Scanner objeto = new Scanner(System.in);
 
         System.out.println("Please write the type of the fuel: ");          String fuel = objeto.nextLine();
@@ -78,6 +74,5 @@ public class Main_Camioneta extends Coche {
             listado.append("Brand: "+camionetas.getBrandCar()+" Fuel type: "+camionetas.getFuelMotor());
             System.out.println(listado.toString());
         }
-
     }
 }

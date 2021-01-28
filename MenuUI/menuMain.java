@@ -32,7 +32,7 @@ public class menuMain
 
                 case 2:
                     opcion=0;
-                    camioneta.mostrarCamioneta();
+                    camioneta.getInfo();
                 break;
 
                 default:
