@@ -22,5 +22,38 @@ public class dynamicsArrays
                 this.ageData = ageData;
         }
 
+        public void addData(dynamicsArrays agregarDato)
+        {
+                datos.add(agregarDato);
+        }
 
+        /*Getters*/
+        public String getNameData()
+        {
+                return nameData;
+        }
+        public String getSurnameData()
+        {
+                return surnameData;
+        }
+        public int getAgeData()
+        {
+                return ageData;
+        }
+
+        /*Setters*/
+        public void setNameData(String nameData)
+        {
+                this.nameData = nameData;
+        }
+        public void setSurnameData(String surnameData)
+        {
+                this.surnameData = surnameData;
+        }
+        public void setAgeData(int ageData)
+        {
+                this.ageData = ageData;
+        }
+
+        /*Main method*/
 }
