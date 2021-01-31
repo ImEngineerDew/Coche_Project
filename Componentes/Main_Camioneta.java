@@ -74,10 +74,8 @@ public class Main_Camioneta extends Coche {
 
             for(Main_Camioneta camionetas: cocheModelo)
             {
-                listado.append("Brand: "+camionetas.getBrandCar()+
-                             " Fuel type: "+camionetas.getFuelMotor()
-                            +" Doors: "+camionetas.getDoorQuantity()
-                            +" Tires: "+camionetas.getTiresQuantity());
+                listado.append(camionetas.getBrandCar()+"\t"+camionetas.getTiresQuantity()+"\t"
+                               +camionetas.getDoorQuantity()+"\t"+camionetas.getTiresQuantity());
                 System.out.println(listado.toString());
                 System.out.println("The truck has leather seats!");
             }
