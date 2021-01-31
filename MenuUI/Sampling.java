@@ -71,8 +71,8 @@ public class Sampling
 
                 for(Sampling resultado : datos)
                 {
-                        System.out.println("Name: "+resultado.getNameData()+" Surname: "+resultado.getSurnameData()+ " Age: "+resultado.getAgeData());
-                        System.out.println();
+                        System.out.println("Name\tSurname\tAge");
+                        System.out.println(datosPersona.getNameData()+"\t"+datosPersona.getSurnameData()+"\t"+datosPersona.getAgeData());
                 }
         }
 
