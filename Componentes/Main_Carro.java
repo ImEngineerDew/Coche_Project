@@ -1,9 +1,17 @@
 package Coche_Proyecto.Componentes;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Main_Carro extends Coche {
     private String esPublico;
     private int passengersQuantity;
+
+    private ArrayList <Main_Carro> carModel = new ArrayList <>();
+
+    private void addCar(Main_Carro agregado)
+    {
+        carModel.add(agregado);
+    }
 
     public Main_Carro() {
         super();
@@ -42,8 +50,7 @@ public class Main_Carro extends Coche {
         Main_Carro renault = new Main_Carro();
         Scanner objeto = new Scanner(System.in);
 
+        
     }
-
-
 }
 
