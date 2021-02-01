@@ -35,14 +35,17 @@ public class templateTruck extends Coche {
     }
 
     @Override
+<<<<<<< HEAD:Componentes/templateTruck.java
     public boolean leatherSeats(String seatsLeather)
     {
         if(seatsLeather.equals("si"))
         {
+=======
+    public boolean asientosDeCuero(String seatsLeather) {
+        if (seatsLeather.equals("si")) {
+>>>>>>> Coche_Project:Componentes/Main_Camioneta.java
             return true;
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
@@ -53,10 +56,10 @@ public class templateTruck extends Coche {
     }
 
     @Override
-    public void getInfo()
-    {
+    public void getInfo() {
         Scanner objeto = new Scanner(System.in);
 
+<<<<<<< HEAD:Componentes/templateTruck.java
         System.out.println("Please write the type of the fuel: ");          String fuel = objeto.nextLine();
         System.out.println("Write your brand car: ");                       String brand= objeto.nextLine();
         System.out.println("Has the truck the leather seats? :");           String leather = objeto.nextLine();
@@ -89,7 +92,45 @@ public class templateTruck extends Coche {
                 listado.append("Brand: "+camionetas.getBrandCar()+" Fuel type: "+camionetas.getFuelMotor());
                 System.out.println(listado.toString());
                 System.out.println("Trhe truck hasn't leather seats!");
+=======
+            System.out.println("Please write the type of the fuel: ");
+            String fuel = objeto.nextLine();
+            System.out.println("Write your brand car: ");
+            String brand = objeto.nextLine();
+            System.out.println("Has the truck the leather seats? :");
+            String leather = objeto.nextLine();
+            System.out.println("What kind of load do you support your car?: ");
+            String loadKind = objeto.nextLine();
+            System.out.println("Please write the number of the doors: ");
+            int doors = objeto.nextInt();
+            System.out.println("Please write the number of the tires  ");
+            int tires = objeto.nextInt();
+            System.out.println("What's the capacity of this truck?: ");
+            int caps = objeto.nextInt();
+
+            Main_Camioneta camioneta = new Main_Camioneta(doors, tires, fuel, brand, leather, caps, loadKind);
+            StringBuilder listado = new StringBuilder();
+
+            if (camioneta.asientosDeCuero(leather) == true) {
+
+                cocheModelo.add(camioneta);
+
+                for (Main_Camioneta camionetas : cocheModelo) {
+                    listado.append(camionetas.getBrandCar() + "\t" + camionetas.getTiresQuantity() + "\t"
+                            + camionetas.getDoorQuantity() + "\t" + camionetas.getTiresQuantity());
+                    System.out.println(listado.toString());
+                    System.out.println("The truck has leather seats!");
+                }
+            } else {
+                    cocheModelo.add(camioneta);
+
+                    for (Main_Camioneta camionetas : cocheModelo)
+                    {
+                    listado.append("Brand: " + camionetas.getBrandCar() + " Fuel type: " + camionetas.getFuelMotor());
+                    System.out.println(listado.toString());
+                    System.out.println("Trhe truck hasn't leather seats!");
+                    }
+>>>>>>> Coche_Project:Componentes/Main_Camioneta.java
             }
         }
     }
-}
