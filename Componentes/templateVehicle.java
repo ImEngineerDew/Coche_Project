@@ -23,7 +23,7 @@ public class templateVehicle extends Coche {
         this.esPublico = esPublico;
     }
 
-    public void getInfo(){ }
+
 
     @Override
     public boolean leatherSeats(String seatsLeather) {
@@ -47,7 +47,8 @@ public class templateVehicle extends Coche {
         }
     }
 
-    public void mostrarCarro() {
+    @Override
+    public void getInfo() {
 
         Scanner object = new Scanner(System.in);
 
