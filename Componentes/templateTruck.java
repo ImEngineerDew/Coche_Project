@@ -35,19 +35,16 @@ public class templateTruck extends Coche {
     }
 
     @Override
-<<<<<<< HEAD:Componentes/templateTruck.java
     public boolean leatherSeats(String seatsLeather)
     {
-        if(seatsLeather.equals("si"))
-        {
-=======
-    public boolean asientosDeCuero(String seatsLeather) {
-        if (seatsLeather.equals("si")) {
->>>>>>> Coche_Project:Componentes/Main_Camioneta.java
-            return true;
-        } else {
-            return false;
-        }
+        if(seatsLeather.equals("si")
+           {
+               return true;
+           }
+        else
+           {
+               return false;
+           }
     }
 
     @Override
@@ -59,7 +56,7 @@ public class templateTruck extends Coche {
     public void getInfo() {
         Scanner objeto = new Scanner(System.in);
 
-<<<<<<< HEAD:Componentes/templateTruck.java
+
         System.out.println("Please write the type of the fuel: ");          String fuel = objeto.nextLine();
         System.out.println("Write your brand car: ");                       String brand= objeto.nextLine();
         System.out.println("Has the truck the leather seats? :");           String leather = objeto.nextLine();
@@ -92,7 +89,7 @@ public class templateTruck extends Coche {
                 listado.append("Brand: "+camionetas.getBrandCar()+" Fuel type: "+camionetas.getFuelMotor());
                 System.out.println(listado.toString());
                 System.out.println("Trhe truck hasn't leather seats!");
-=======
+
             System.out.println("Please write the type of the fuel: ");
             String fuel = objeto.nextLine();
             System.out.println("Write your brand car: ");
@@ -130,7 +127,6 @@ public class templateTruck extends Coche {
                     System.out.println(listado.toString());
                     System.out.println("Trhe truck hasn't leather seats!");
                     }
->>>>>>> Coche_Project:Componentes/Main_Camioneta.java
+               }
             }
-        }
     }
