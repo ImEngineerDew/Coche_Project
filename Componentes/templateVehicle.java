@@ -99,8 +99,5 @@ public class templateVehicle extends Coche {
                 }
             }
         }
-        {
-
-        }
     }
 }
