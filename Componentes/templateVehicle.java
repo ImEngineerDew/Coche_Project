@@ -23,8 +23,6 @@ public class templateVehicle extends Coche {
         this.esPublico = esPublico;
     }
 
-
-
     @Override
     public boolean leatherSeats(String seatsLeather) {
         if (seatsLeather.equals("si")) {
