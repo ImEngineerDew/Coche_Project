@@ -29,7 +29,8 @@ public class templateVehicle extends Coche {
     public boolean leatherSeats(String seatsLeather) {
         if (seatsLeather.equals("si")) {
             return true;
-        } else {
+        } else
+        {
             return false;
         }
     }

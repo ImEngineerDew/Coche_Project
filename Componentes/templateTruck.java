@@ -35,6 +35,21 @@ public class templateTruck extends Coche {
     }
 
     @Override
+    public int passengersQuantity(int passengersQuantity) {
+        return passengersQuantity;
+    }
+
+    @Override
+    public boolean leatherSeats(String seatsLeather) {
+        if (seatsLeather.equals("si")) {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
+    @Override
     public void getInfo()
     {
 
