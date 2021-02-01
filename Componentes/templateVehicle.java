@@ -2,22 +2,22 @@ package Coche_Proyecto.Componentes;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Main_Carro extends Coche {
+public class templateVehicle extends Coche {
     private String esPublico;
     private int passengersQuantity;
 
-    private ArrayList <Main_Carro> carModel = new ArrayList <>();
+    private ArrayList <templateVehicle> carModel = new ArrayList <>();
 
-    private void addCar(Main_Carro agregado)
+    private void addCar(templateVehicle agregado)
     {
         carModel.add(agregado);
     }
 
-    public Main_Carro() {
+    public templateVehicle() {
         super();
     }
 
-    public Main_Carro(int doorQuantity, int tiresQuantity, String fuelMotor, String brandCar, String seatsLeather, String esPublico) {
+    public templateVehicle(int doorQuantity, int tiresQuantity, String fuelMotor, String brandCar, String seatsLeather, String esPublico) {
         super(doorQuantity, tiresQuantity, fuelMotor, brandCar, seatsLeather);
         this.esPublico = esPublico;
     }
@@ -47,10 +47,10 @@ public class Main_Carro extends Coche {
     }
 
     public void mostrarCarro() {
-        Main_Carro renault = new Main_Carro();
+        templateVehicle renault = new templateVehicle();
         Scanner objeto = new Scanner(System.in);
 
-        
+
     }
 }
 

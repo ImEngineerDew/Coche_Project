@@ -1,6 +1,6 @@
 package Coche_Proyecto.MenuUI;
-import Coche_Proyecto.Componentes.Main_Camioneta;
-import Coche_Proyecto.Componentes.Main_Carro;
+import Coche_Proyecto.Componentes.templateTruck;
+import Coche_Proyecto.Componentes.templateVehicle;
 
 import java.util.Scanner;
 
@@ -13,8 +13,8 @@ public class menuMain
         System.out.println("1. Carro partícular");
         System.out.println("2. Camioneta");
 
-        Main_Camioneta camioneta = new Main_Camioneta();
-        Main_Carro carro = new Main_Carro();
+        templateTruck camioneta = new templateTruck();
+        templateVehicle carro = new templateVehicle();
 
         int opcion = 0;
 
