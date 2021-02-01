@@ -25,7 +25,7 @@ public class templateVehicle extends Coche {
     public void getInfo(){ }
 
     @Override
-    public boolean asientosDeCuero(String seatsLeather) {
+    public boolean leatherSeats(String seatsLeather) {
         if (seatsLeather.equals("si")) {
             return true;
         } else {
@@ -47,10 +47,7 @@ public class templateVehicle extends Coche {
     }
 
     public void mostrarCarro() {
-        templateVehicle renault = new templateVehicle();
-        Scanner objeto = new Scanner(System.in);
-
-
+        
     }
 }
 

@@ -35,7 +35,7 @@ public class templateTruck extends Coche {
     }
 
     @Override
-    public boolean asientosDeCuero(String seatsLeather)
+    public boolean leatherSeats(String seatsLeather)
     {
         if(seatsLeather.equals("si"))
         {
