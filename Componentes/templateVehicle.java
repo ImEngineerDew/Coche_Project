@@ -54,7 +54,52 @@ public class templateVehicle extends Coche {
         System.out.println("Please write the brand of the car: ");          String brand = object.next();
         System.out.println("Which kind of the fuel has the car?: ");        String fuel = object.next();
         System.out.println("Has the truck the leather seats? :");           String leather = object.next();
+        System.out.println("Is the public service the car?: ");             String publicService = object.next();
+        System.out.println("Please write the quantity of tires: ");         int tires = object.nextInt();
+        System.out.println("Please write the number of doors: ");           int doors = object.nextInt();
 
-        templateVehicle car = new templateVehicle();
+        templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather,publicService);
+
+        if (car.servicioPublico(publicService))
+        {
+            if(car.asientosDeCuero(leather))
+            {
+                carModel.add(car);
+                for(templateVehicle listado: carModel)
+                {
+                    System.out.println("The car belongs to the public service and has leather seats");
+                }
+            }
+            else
+            {
+                carModel.add(car);
+                for(templateVehicle listado: carModel)
+                {
+                    System.out.println("The car belongs to the public service and hasn't leather seats");
+                }
+            }
+        }
+        else
+        {
+            if(car.asientosDeCuero(leather))
+            {
+                carModel.add(car);
+                for(templateVehicle listado: carModel)
+                {
+                    System.out.println("The car doesn't belong to the public service and has leather seats");
+                }
+            }
+            else
+            {
+                carModel.add(car);
+                for(templateVehicle listado: carModel)
+                {
+                    System.out.println("The car doesn't belong to the public service and hasn't leather seats");
+                }
+            }
+        }
+        {
+
+        }
     }
 }
