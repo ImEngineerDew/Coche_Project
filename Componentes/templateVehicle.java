@@ -23,6 +23,8 @@ public class templateVehicle extends Coche {
         this.esPublico = esPublico;
     }
 
+
+
     @Override
     public boolean leatherSeats(String seatsLeather) {
         if (seatsLeather.equals("si")) {
@@ -60,50 +62,24 @@ public class templateVehicle extends Coche {
 
         templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather,publicService);
 
-        if (car.asientosDeCuero(leather))
+        if(car.asientosDeCuero(leather))
         {
-            if(car.servicioPublico(publicService))
-            {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("Brand\t¿Leather seats?\t¿Public service?\tFuel class");
-                    System.out.println(car.getBrandCar()+"\t"+car.asientosDeCuero(leather)+"\t"+car.servicioPublico(publicService)+"\t"+car.getFuelMotor());
-                    System.out.println("The car belongs to the public service and has leather seats");
-                }
-            }
-            else
-            {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("Brand\t¿Leather seats?\t¿Public service?\tFuel class");
-                    System.out.println(car.getBrandCar()+"\t"+car.asientosDeCuero(leather)+"\t"+car.servicioPublico(publicService)+"\t"+car.getFuelMotor());
-                    System.out.println("The car belongs to the public service and hasn't leather seats");
-                }
-            }
+           carModel.add(car);
+           for(templateVehicle listado: carModel)
+           {
+             System.out.println("Brand\t¿Leather seats?\t¿Public service?\tFuel class");
+             System.out.println(car.getBrandCar()+"\t"+car.asientosDeCuero(leather)+"\t"+car.servicioPublico(publicService)+"\t"+car.getFuelMotor());
+             System.out.println("The car belongs to the public service and has leather seats");
+           }
         }
         else
         {
-            if(car.servicioPublico(publicService))
+            carModel.add(car);
+            for(templateVehicle listado: carModel)
             {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("Brand\t¿Leather seats?\t¿Public service?\tFuel class");
-                    System.out.println(car.getBrandCar()+"\t"+car.asientosDeCuero(leather)+"\t"+car.servicioPublico(publicService)+"\t"+car.getFuelMotor());
-                    System.out.println("The car doesn't belong to the public service and has leather seats");
-                }
-            }
-            else
-            {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("Brand\t¿Leather seats?\t¿Public service?\tFuel class");
-                    System.out.println(car.getBrandCar()+"\t"+car.asientosDeCuero(leather)+"\t"+car.servicioPublico(publicService)+"\t"+car.getFuelMotor());
-                    System.out.println("The car doesn't belong to the public service and hasn't leather seats");
-                }
+              System.out.println("Brand\t¿Leather seats?\t¿Public service?\tFuel class");
+              System.out.println(car.getBrandCar()+"\t"+car.asientosDeCuero(leather)+"\t"+car.servicioPublico(publicService)+"\t"+car.getFuelMotor());
+              System.out.println("The car belongs to the public service and hasn't leather seats");
             }
         }
     }
