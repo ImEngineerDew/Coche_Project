@@ -114,9 +114,9 @@ public class templateTruck extends Coche {
                     break;
 
                 case 3:
+                    System.out.println("Choose an element from remove by the previous list: ");
                     Scanner removeOpt = new Scanner(System.in);
                     int removeList = removeOpt.nextInt();
-                    System.out.println("Choose an element from remove by the previous list: ");
 
                     truckModel.remove(removeList);
                     break;
