@@ -7,10 +7,9 @@ import java.util.ArrayList;
 public class templateVehicle extends Coche {
 
     private String esPublico;
-    private ArrayList <templateVehicle> carModel = new ArrayList <>();
+    private ArrayList<templateVehicle> carModel = new ArrayList<>();
 
-    private void addCar(templateVehicle agregado)
-    {
+    private void addCar(templateVehicle agregado) {
         carModel.add(agregado);
     }
 
@@ -26,8 +25,7 @@ public class templateVehicle extends Coche {
     public boolean leatherSeats(String seatsLeather) {
         if (seatsLeather.equals("si")) {
             return true;
-        } else
-        {
+        } else {
             return false;
         }
     }
@@ -38,43 +36,57 @@ public class templateVehicle extends Coche {
     }
 
     @Override
-    public void getInfo()
-    {
+    public void getInfo() {
         String brand, fuel, leather, tiresString, doorsString;
         int tires, doors;
 
-        System.out.println("You're selected the car option, please choose the number: ");
-        System.out.println("1. Creating a car ");
-        System.out.println("2. Showing a car ");
-        System.out.println("3. Deleting a car");
+        boolean salir = false;
 
-        Scanner opc = new Scanner (System.in);
+        do{
+            System.out.println("You're selected the car option, please choose the number: ");
+            System.out.println("1. Creating a car ");
+            System.out.println("2. Showing a car ");
+            System.out.println("3. Deleting a car");
 
-        int option = opc.nextInt();
+            Scanner opc = new Scanner(System.in);
+            int option = opc.nextInt();
 
-        do {
-            option = 0;
-
-            switch(option)
-            {
+            switch (option) {
                 case 1:
                     Scanner object = new Scanner(System.in);
-                    Scanner objectInt = new Scanner (System.in);
+                    Scanner objectInt = new Scanner(System.in);
 
                     System.out.println("Creating the vehicle..");
 
-                    System.out.println("Please write the brand of the car: ");          brand = object.next();
-                    System.out.println("Which kind of the fuel has the car?: ");        fuel = object.next();
-                    System.out.println("Has the truck the leather seats? :");           leather = objectInt.nextLine();
-                    System.out.println("Please write the quantity of tires: ");         tiresString = objectInt.nextLine();
-                    System.out.println("Please write the number of doors: ");           doorsString = objectInt.nextLine();
+                    System.out.println("Please write the brand of the car: ");
+                    brand = object.next();
+                    System.out.println("Which kind of the fuel has the car?: ");
+                    fuel = object.next();
+                    System.out.println("Has the truck the leather seats? :");
+                    leather = objectInt.nextLine();
+                    System.out.println("Please write the quantity of tires: ");
+                    tiresString = objectInt.nextLine();
+                    System.out.println("Please write the number of doors: ");
+                    doorsString = objectInt.nextLine();
 
                     tires = Integer.parseInt(tiresString);
                     doors = Integer.parseInt(doorsString);
 
-                    templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather);
+                    templateVehicle car = new templateVehicle(doors, tires, fuel, brand, leather);
                     carModel.add(car);
+                    break;
+
+                case 2:
+                    System.out.println("Show the car info: ");
+                    for (templateVehicle cochecito : carModel) {
+                        System.out.println(cochecito.getBrandCar() + "\t" + cochecito.getFuelMotor()
+                                + "\t" + cochecito.getTiresQuantity() + "\t" + cochecito.getDoorQuantity());
+                    }
+                    break;
+                case 3:
+                    salir = true;
+                    break;
             }
-        }while(option!=0);
+        }while(!salir);
     }
 }
