@@ -14,6 +14,11 @@ public class templateTruck extends Coche {
        truckModel.add(added);
     }
 
+    public void deleteTruck(templateTruck listToErase)
+    {
+        truckModel.remove(listToErase);
+    }
+
     public templateTruck() {
         super();
         this.loadCapacity = 4;               /*Capacidad en volumen*/
@@ -109,7 +114,11 @@ public class templateTruck extends Coche {
                     break;
 
                 case 3:
-                    System.out.println("Under construction, please wait on a few days");
+                    Scanner removeOpt = new Scanner(System.in);
+                    int removeList = removeOpt.nextInt();
+                    System.out.println("Choose an element from remove by the previous list: ");
+
+                    truckModel.remove(removeList);
                     break;
 
                 case 4:
