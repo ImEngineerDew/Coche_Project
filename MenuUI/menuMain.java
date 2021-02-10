@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class menuMain
 {
-    public static void main (String args[])
+    public static void main (String [] args)
     {
         templateTruck camioneta = new templateTruck();
         templateVehicle carro = new templateVehicle();
@@ -15,11 +15,12 @@ public class menuMain
 
         do
         {
-            System.out.println("Bienvenido a la concesionaria Toads Dewin");
-            System.out.println("Por favor seleccione el vehículo de su preferencia");
-            System.out.println("1. Carro partícular");
-            System.out.println("2. Camioneta");
-            System.out.println("3. Salir del progarma");
+            System.out.println("Welcome to the Toads Dewin vehicle store");
+            System.out.println("Please choose the vehilcle of your preference");
+            System.out.println("1. Particular car");
+            System.out.println("2. Truck");
+            System.out.println("3. Exit of the program");
+            System.out.println("\n");
             
             Scanner lista = new Scanner(System.in);
             int opcion = lista.nextInt();
