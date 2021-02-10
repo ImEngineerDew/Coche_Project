@@ -1,6 +1,5 @@
 package Coche_Proyecto.Componentes;
 
-
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -77,7 +76,8 @@ public class templateVehicle extends Coche {
                     break;
 
                 case 2:
-                    System.out.println("Show the car info: ");
+                    System.out.println("Car list info: ");
+                    System.out.println("\n");
                     for (templateVehicle cochecito : carModel) {
                         System.out.println(cochecito.getBrandCar() + "\t" + cochecito.getFuelMotor()
                                 + "\t" + cochecito.getTiresQuantity() + "\t" + cochecito.getDoorQuantity());

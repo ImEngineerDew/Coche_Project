@@ -19,6 +19,7 @@ public class menuMain
             System.out.println("Por favor seleccione el vehículo de su preferencia");
             System.out.println("1. Carro partícular");
             System.out.println("2. Camioneta");
+            System.out.println("3. Salir del progarma");
             
             Scanner lista = new Scanner(System.in);
             int opcion = lista.nextInt();
@@ -32,9 +33,13 @@ public class menuMain
                 case 2:
                     camioneta.getInfo();
                     break;
+                case 3:
+                    exit = true;
+                    System.out.println("Thank you for your visit!");
+                    break;
 
                 default:
-                    System.out.println("Opción no válida");
+                    System.out.println("Wrong option!");
             }
         }while(!exit);
     }

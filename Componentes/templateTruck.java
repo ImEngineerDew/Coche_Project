@@ -97,7 +97,8 @@ public class templateTruck extends Coche {
                     break;
 
                 case 2:
-                    System.out.println("This is the second option");
+                    System.out.println("Truck list info: ");
+                    System.out.println("\n");
                     break;
 
                 case 3:
