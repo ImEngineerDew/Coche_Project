@@ -8,11 +8,6 @@ public class menuMain
 {
     public static void main (String args[])
     {
-        System.out.println("Bienvenido a la concesionaria Toads Dewin");
-        System.out.println("Por favor seleccione el vehículo de su preferencia");
-        System.out.println("1. Carro partícular");
-        System.out.println("2. Camioneta");
-
         templateTruck camioneta = new templateTruck();
         templateVehicle carro = new templateVehicle();
 
@@ -20,6 +15,11 @@ public class menuMain
 
         do
         {
+            System.out.println("Bienvenido a la concesionaria Toads Dewin");
+            System.out.println("Por favor seleccione el vehículo de su preferencia");
+            System.out.println("1. Carro partícular");
+            System.out.println("2. Camioneta");
+            
             Scanner lista = new Scanner(System.in);
             int opcion = lista.nextInt();
                         
