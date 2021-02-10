@@ -54,11 +54,31 @@ public class templateTruck extends Coche {
     {
         int tires, doors;
         String brand, fuel, leather, doorString, fuelString;
-        Scanner objeto = new Scanner(System.in);
-
         boolean exit = false;
 
         do {
+            System.out.println("You're selected the truck option, please choose the number: ");
+            System.out.println("1. Creating a truck ");
+            System.out.println("2. Showing a truck ");
+            System.out.println("3. Deleting a truck ");
+
+            Scanner option = new Scanner(System.in);
+            int opt = option.nextInt();
+
+            switch(opt)
+            {
+                case 1:
+                    break;
+
+                case 2:
+                    System.out.println("This is the second option");
+                    break;
+
+                case 3:
+                    exit= true;
+                    break;
+
+            }
 
         }while(!exit);
 
