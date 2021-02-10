@@ -10,8 +10,8 @@ public class templateTruck extends Coche {
 
     private ArrayList<templateTruck> truckModel = new ArrayList<>();
 
-    public void addCamioneta(templateTruck agregado) {
-       truckModel.add(agregado);
+    public void addTruck(templateTruck added) {
+       truckModel.add(added);
     }
 
     public templateTruck() {
