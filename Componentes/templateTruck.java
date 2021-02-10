@@ -52,6 +52,17 @@ public class templateTruck extends Coche {
     @Override
     public void getInfo()
     {
+        int tires, doors;
+        String brand, fuel, leather, doorString, fuelString;
+        Scanner objeto = new Scanner(System.in);
+
+        boolean exit = false;
+
+        do {
+
+        }while(!exit);
+
+
 
     }
 }
