@@ -8,10 +8,10 @@ public class templateTruck extends Coche {
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
 
-    private ArrayList<templateTruck> cocheModelo = new ArrayList<>();
+    private ArrayList<templateTruck> truckModel = new ArrayList<>();
 
     public void addCamioneta(templateTruck agregado) {
-        cocheModelo.add(agregado);
+       truckModel.add(agregado);
     }
 
     public templateTruck() {
@@ -93,6 +93,7 @@ public class templateTruck extends Coche {
                     load  = Integer.parseInt(loadString);
 
                     templateTruck camion = new templateTruck(doors,tires,fuel,brand,leather,load,typeString);
+                    truckModel.add(camion);
                     break;
 
                 case 2:
@@ -102,13 +103,8 @@ public class templateTruck extends Coche {
                 case 3:
                     exit= true;
                     break;
-
             }
-
         }while(!exit);
-
-
-
     }
 }
 
