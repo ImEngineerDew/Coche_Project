@@ -16,28 +16,26 @@ public class menuMain
         templateTruck camioneta = new templateTruck();
         templateVehicle carro = new templateVehicle();
 
-        int opcion = 0;
+        boolean exit = false;
 
         do
         {
             Scanner lista = new Scanner(System.in);
-            opcion = lista.nextInt();
-
+            int opcion = lista.nextInt();
+                        
             switch(opcion)
             {
                 case 1:
-                    opcion = 0;
                     carro.getInfo();
                     break;
 
                 case 2:
-                    opcion=0;
                     camioneta.getInfo();
-                break;
+                    break;
 
                 default:
                     System.out.println("Opción no válida");
             }
-        }while(opcion!=0);
+        }while(!exit);
     }
 }
