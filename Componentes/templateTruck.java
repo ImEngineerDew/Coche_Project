@@ -52,8 +52,8 @@ public class templateTruck extends Coche {
     @Override
     public void getInfo()
     {
-        int tires, doors;
-        String brand, fuel, leather, doorString, fuelString;
+        int tires, doors, load;
+        String brand, fuel, leather, tiresString,doorsString,loadString,typeString;
         boolean exit = false;
 
         do {
@@ -68,6 +68,31 @@ public class templateTruck extends Coche {
             switch(opt)
             {
                 case 1:
+                    Scanner objeto = new Scanner(System.in);
+                    Scanner objetoNum = new Scanner(System.in);
+
+                    System.out.println("Creating the truck...");
+
+                    System.out.println("Please write the brand of the car: ");
+                    brand = objeto.nextLine();
+                    System.out.println("Which kind of the fuel has the car?: ");
+                    fuel = objeto.nextLine();
+                    System.out.println("Has the truck the leather seats? :");
+                    leather = objeto.nextLine();
+                    System.out.println("Please write the quantity of tires: ");
+                    tiresString = objetoNum.nextLine();
+                    System.out.println("Please write the number of doors: ");
+                    doorsString = objetoNum.nextLine();
+                    System.out.println("Please wite the quantity of load: ");
+                    loadString = objetoNum.nextLine();
+                    System.out.println("Please write the kind of load: ");
+                    typeString = objeto.nextLine();
+
+                    tires = Integer.parseInt(tiresString);
+                    doors = Integer.parseInt(doorsString);
+                    load  = Integer.parseInt(loadString);
+
+                    templateTruck camion = new templateTruck(doors,tires,fuel,brand,leather,load,typeString);
                     break;
 
                 case 2:
