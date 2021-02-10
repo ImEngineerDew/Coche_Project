@@ -12,6 +12,11 @@ public class templateVehicle extends Coche {
         carModel.add(agregado);
     }
 
+    private void removeCar(templateVehicle removingCar)
+    {
+        carModel.remove(removingCar);
+    }
+
     public templateVehicle() {
         super();
     }
@@ -86,7 +91,11 @@ public class templateVehicle extends Coche {
                     break;
 
                 case 3:
-                    System.out.println("Under construction, please wait on a few days");
+                    System.out.println("Choose an element from remove by the previous list: ");
+                    Scanner removeOpt = new Scanner(System.in);
+                    int removeList = removeOpt.nextInt();
+
+                    carModel.remove(removeList);
                     break;
 
                 case 4:

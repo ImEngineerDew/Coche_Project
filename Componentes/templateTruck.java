@@ -128,11 +128,3 @@ public class templateTruck extends Coche {
         }while(!exit);
     }
 }
-
-
-
-
-
-
-
-
