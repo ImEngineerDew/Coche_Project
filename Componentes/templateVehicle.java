@@ -18,9 +18,8 @@ public class templateVehicle extends Coche {
         super();
     }
 
-    public templateVehicle(int doorQuantity, int tiresQuantity, String fuelMotor, String brandCar, String seatsLeather, String esPublico) {
+    public templateVehicle(int doorQuantity, int tiresQuantity, String fuelMotor, String brandCar, String seatsLeather) {
         super(doorQuantity, tiresQuantity, fuelMotor, brandCar, seatsLeather);
-        this.esPublico = esPublico;
     }
 
     @Override
@@ -38,65 +37,48 @@ public class templateVehicle extends Coche {
         return passengersQuantity;
     }
 
-    public boolean servicioPublico(String esPublico) {
-        if (esPublico.equals("si")) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     @Override
     public void getInfo() {
 
         Scanner object = new Scanner(System.in);
+        Scanner objectInt = new Scanner (System.in);
 
         System.out.println("Please write the brand of the car: ");          String brand = object.next();
         System.out.println("Which kind of the fuel has the car?: ");        String fuel = object.next();
-        System.out.println("Has the truck the leather seats? :");           String leather = object.next();
-        System.out.println("Is the public service the car?: ");             String publicService = object.next();
-        System.out.println("Please write the quantity of tires: ");         int tires = object.nextInt();
-        System.out.println("Please write the number of doors: ");           int doors = object.nextInt();
+        System.out.println("Has the truck the leather seats? :");           String leather = objectInt.nextLine();
+        System.out.println("Please write the quantity of tires: ");         String tiresString = objectInt.nextLine();
+        System.out.println("Please write the number of doors: ");           String doorsString = objectInt.nextLine();
 
-        templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather,publicService);
+        int tires = Integer.parseInt(tiresString);
+        int doors = Integer.parseInt(doorsString);
 
-        if (car.servicioPublico(publicService))
+        templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather);
+
+        carModel.add(car);
+
+        if(car.asientosDeCuero(leather) )
         {
-            if(car.asientosDeCuero(leather))
+            carModel.add(car);
+            for(templateVehicle listado: carModel)
             {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("The car belongs to the public service and has leather seats");
-                }
-            }
-            else
-            {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("The car belongs to the public service and hasn't leather seats");
-                }
+                //System.out.println("Brand\t¿Leather seats?\tFuel class");
+                System.out.println(car.getBrandCar()+"\t"+car.leatherSeats("si")+"\t"+"\t"+car.getFuelMotor());
+                System.out.println("The car belongs to the public service and has leather seats");
             }
         }
         else
         {
-            if(car.asientosDeCuero(leather))
+            for(templateVehicle listado: carModel)
             {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("The car doesn't belong to the public service and has leather seats");
-                }
-            }
-            else
-            {
-                carModel.add(car);
-                for(templateVehicle listado: carModel)
-                {
-                    System.out.println("The car doesn't belong to the public service and hasn't leather seats");
-                }
+                //System.out.println("Brand\t¿Leather seats?\tFuel class");
+                System.out.println(car.getBrandCar()+"\t"+car.leatherSeats("no")+"\t"+"\t"+car.getFuelMotor());
+                System.out.println("The car belongs to the public service and hasn't leather seats");
             }
         }
+    }
+
+    public void showInfo()
+    {
+
     }
 }
