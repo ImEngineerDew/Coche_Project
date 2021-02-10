@@ -55,10 +55,30 @@ public class templateVehicle extends Coche {
         templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather);
 
         carModel.add(car);
+
+        if(car.asientosDeCuero(leather) )
+        {
+            carModel.add(car);
+            for(templateVehicle listado: carModel)
+            {
+                //System.out.println("Brand\t¿Leather seats?\tFuel class");
+                System.out.println(car.getBrandCar()+"\t"+car.leatherSeats("si")+"\t"+"\t"+car.getFuelMotor());
+                System.out.println("The car belongs to the public service and has leather seats");
+            }
+        }
+        else
+        {
+            for(templateVehicle listado: carModel)
+            {
+                //System.out.println("Brand\t¿Leather seats?\tFuel class");
+                System.out.println(car.getBrandCar()+"\t"+car.leatherSeats("no")+"\t"+"\t"+car.getFuelMotor());
+                System.out.println("The car belongs to the public service and hasn't leather seats");
+            }
+        }
     }
 
     public void showInfo()
     {
-        
+
     }
 }
