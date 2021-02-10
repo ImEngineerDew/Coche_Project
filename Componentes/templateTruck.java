@@ -61,6 +61,7 @@ public class templateTruck extends Coche {
             System.out.println("1. Creating a truck ");
             System.out.println("2. Showing a truck ");
             System.out.println("3. Deleting a truck ");
+            System.out.println("4. Exit the secondary menu");
 
             Scanner option = new Scanner(System.in);
             int opt = option.nextInt();
@@ -99,9 +100,19 @@ public class templateTruck extends Coche {
                 case 2:
                     System.out.println("Truck list info: ");
                     System.out.println("\n");
+                    for(templateTruck lista: truckModel)
+                    {
+                        System.out.println(lista.getBrandCar()+"\t"+lista.getLoadCapacity()
+                                +"\t"+lista.getTypeLoad()+"\t"+lista.getFuelMotor()+"\t"
+                                +"\t"+lista.getDoorQuantity()+"\t"+lista.getTiresQuantity());
+                    }
                     break;
 
                 case 3:
+                    System.out.println("Under construction, please wait on a few days");
+                    break;
+
+                case 4:
                     exit= true;
                     break;
             }

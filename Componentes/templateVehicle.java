@@ -46,6 +46,7 @@ public class templateVehicle extends Coche {
             System.out.println("1. Creating a car ");
             System.out.println("2. Showing a car ");
             System.out.println("3. Deleting a car");
+            System.out.println("4. Exit the secondary menu");
 
             Scanner opc = new Scanner(System.in);
             int option = opc.nextInt();
@@ -83,7 +84,12 @@ public class templateVehicle extends Coche {
                                 + "\t" + cochecito.getTiresQuantity() + "\t" + cochecito.getDoorQuantity());
                     }
                     break;
+
                 case 3:
+                    System.out.println("Under construction, please wait on a few days");
+                    break;
+
+                case 4:
                     salir = true;
                     break;
             }
