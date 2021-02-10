@@ -28,7 +28,7 @@ public class menuMain
                 case 1:
                     opcion = 0;
                     carro.getInfo();
-                break;
+                    break;
 
                 case 2:
                     opcion=0;

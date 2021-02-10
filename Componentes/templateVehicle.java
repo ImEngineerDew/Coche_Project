@@ -38,47 +38,43 @@ public class templateVehicle extends Coche {
     }
 
     @Override
-    public void getInfo() {
-
-        Scanner object = new Scanner(System.in);
-        Scanner objectInt = new Scanner (System.in);
-
-        System.out.println("Please write the brand of the car: ");          String brand = object.next();
-        System.out.println("Which kind of the fuel has the car?: ");        String fuel = object.next();
-        System.out.println("Has the truck the leather seats? :");           String leather = objectInt.nextLine();
-        System.out.println("Please write the quantity of tires: ");         String tiresString = objectInt.nextLine();
-        System.out.println("Please write the number of doors: ");           String doorsString = objectInt.nextLine();
-
-        int tires = Integer.parseInt(tiresString);
-        int doors = Integer.parseInt(doorsString);
-
-        templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather);
-
-        carModel.add(car);
-
-        if(car.asientosDeCuero(leather) )
-        {
-            carModel.add(car);
-            for(templateVehicle listado: carModel)
-            {
-                //System.out.println("Brand\t¿Leather seats?\tFuel class");
-                System.out.println(car.getBrandCar()+"\t"+car.leatherSeats("si")+"\t"+"\t"+car.getFuelMotor());
-                System.out.println("The car belongs to the public service and has leather seats");
-            }
-        }
-        else
-        {
-            for(templateVehicle listado: carModel)
-            {
-                //System.out.println("Brand\t¿Leather seats?\tFuel class");
-                System.out.println(car.getBrandCar()+"\t"+car.leatherSeats("no")+"\t"+"\t"+car.getFuelMotor());
-                System.out.println("The car belongs to the public service and hasn't leather seats");
-            }
-        }
-    }
-
-    public void showInfo()
+    public void getInfo()
     {
+        String brand, fuel, leather, tiresString, doorsString;
+        int tires, doors;
 
+        System.out.println("You're selected the car option, please choose the number: ");
+        System.out.println("1. Creating a car ");
+        System.out.println("2. Showing a car ");
+        System.out.println("3. Deleting a car");
+
+        Scanner opc = new Scanner (System.in);
+
+        int option = opc.nextInt();
+
+        do {
+            option = 0;
+
+            switch(option)
+            {
+                case 1:
+                    Scanner object = new Scanner(System.in);
+                    Scanner objectInt = new Scanner (System.in);
+
+                    System.out.println("Creating the vehicle..");
+
+                    System.out.println("Please write the brand of the car: ");          brand = object.next();
+                    System.out.println("Which kind of the fuel has the car?: ");        fuel = object.next();
+                    System.out.println("Has the truck the leather seats? :");           leather = objectInt.nextLine();
+                    System.out.println("Please write the quantity of tires: ");         tiresString = objectInt.nextLine();
+                    System.out.println("Please write the number of doors: ");           doorsString = objectInt.nextLine();
+
+                    tires = Integer.parseInt(tiresString);
+                    doors = Integer.parseInt(doorsString);
+
+                    templateVehicle car = new templateVehicle(doors,tires,fuel,brand,leather);
+                    carModel.add(car);
+            }
+        }while(option!=0);
     }
 }

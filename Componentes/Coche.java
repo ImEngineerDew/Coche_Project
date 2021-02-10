@@ -77,6 +77,4 @@ public abstract class Coche implements tieneAsientos, passengersQuantity
     }
 
     public abstract void getInfo();
-
-    public abstract void showInfo();
 }
