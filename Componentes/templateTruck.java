@@ -1,7 +1,5 @@
 package Coche_Proyecto.Componentes;
 import java.util.Scanner;
-import java.util.ArrayList;
-
 
 public class templateTruck extends Coche implements addTruck, removeTruck{
     private int loadCapacity;                //Quantity of the load about of this truck
