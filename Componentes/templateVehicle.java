@@ -14,7 +14,6 @@ public class templateVehicle extends Coche implements addVehicle {
         addCar.add(addition);
     }
 
-
     private void removeCar(templateVehicle removingCar)
     {
         carModel.remove(removingCar);
@@ -81,7 +80,7 @@ public class templateVehicle extends Coche implements addVehicle {
                     doors = Integer.parseInt(doorsString);
 
                     templateVehicle car = new templateVehicle(doors, tires, fuel, brand, leather);
-                    carModel.add(car);
+                    addCar.add(car);
                     break;
 
                 case 2:
