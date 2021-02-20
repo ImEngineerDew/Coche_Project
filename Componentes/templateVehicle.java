@@ -90,7 +90,7 @@ public class templateVehicle extends Coche implements addVehicle, removeCar {
                 case 2:
                     System.out.println("Car list info: ");
                     System.out.println("\n");
-                    for (templateVehicle cochecito : carModel) {
+                    for (templateVehicle cochecito : addCar) {
                         System.out.println(cochecito.getBrandCar() + "\t" + cochecito.getFuelMotor()
                                 + "\t" + cochecito.getTiresQuantity() + "\t" + cochecito.getDoorQuantity());
                     }
