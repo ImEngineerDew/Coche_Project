@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
-public class templateTruck extends Coche implements addCar {
+public class templateTruck extends Coche implements addCar,removeCar {
     private int loadCapacity;                //Quantity of the load about of this truck
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
@@ -12,9 +12,9 @@ public class templateTruck extends Coche implements addCar {
        typeCar.add(addition);
     }
 
-    public void deleteTruck(templateTruck listToErase)
+    public void removeCarType(removeCar delete)
     {
-        addCar.remove(listToErase);
+        removeC.remove(delete);
     }
 
     public templateTruck() {
@@ -97,13 +97,13 @@ public class templateTruck extends Coche implements addCar {
                     load  = Integer.parseInt(loadString);
 
                     templateTruck camion = new templateTruck(doors,tires,fuel,brand,leather,load,typeString);
-                    truckModel.add(camion);
+                    typeCar.add(camion);
                     break;
 
                 case 2:
                     System.out.println("Truck list info: ");
                     System.out.println("\n");
-                    for(templateTruck lista: truckModel)
+                    for(templateTruck lista: typeCar)
                     {
                         System.out.println(lista.getBrandCar()+"\t"+lista.getLoadCapacity()
                                 +"\t"+lista.getTypeLoad()+"\t"+lista.getFuelMotor()+"\t"
@@ -116,7 +116,7 @@ public class templateTruck extends Coche implements addCar {
                     Scanner removeOpt = new Scanner(System.in);
                     int removeList = removeOpt.nextInt();
 
-                    truckModel.remove(removeList);
+                    removeC.remove(removeList);
                     break;
 
                 case 4:
