@@ -3,20 +3,20 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
-public class templateTruck extends Coche{
+public class templateTruck extends Coche implements addTruck, removeTruck{
     private int loadCapacity;                //Quantity of the load about of this truck
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
 
-    private ArrayList<templateTruck> typeCar = new ArrayList<>();
-
-    public void addCarType(templateTruck addition) {
-       typeCar.add(addition);
-    }
-
-    public void removeCarType(templateTruck delete)
+    @Override
+    public void addTruckType(templateTruck addition)
     {
-        typeCar.remove(delete);
+        addT.add(addition);
+    }
+    @Override
+    public void removeTruckType(templateTruck delete)
+    {
+        removeT.remove(delete);
     }
 
     public templateTruck() {
@@ -99,13 +99,13 @@ public class templateTruck extends Coche{
                     load  = Integer.parseInt(loadString);
 
                     templateTruck camion = new templateTruck(doors,tires,fuel,brand,leather,load,typeString);
-                    typeCar.add(camion);
+                    addT.add(camion);
                     break;
 
                 case 2:
                     System.out.println("Truck list info: ");
                     System.out.println("\n");
-                    for(templateTruck lista: typeCar)
+                    for(templateTruck lista: addT)
                     {
                         System.out.println(lista.getBrandCar()+"\t"+lista.getLoadCapacity()
                                 +"\t"+lista.getTypeLoad()+"\t"+lista.getFuelMotor()+"\t"
@@ -117,8 +117,7 @@ public class templateTruck extends Coche{
                     System.out.println("Choose an element from remove by the previous list: ");
                     Scanner removeOpt = new Scanner(System.in);
                     int removeList = removeOpt.nextInt();
-
-                    typeCar.remove(removeList);
+                    removeT.remove(removeList);
                     break;
 
                 case 4:
@@ -127,4 +126,5 @@ public class templateTruck extends Coche{
             }
         }while(!exit);
     }
+
 }
