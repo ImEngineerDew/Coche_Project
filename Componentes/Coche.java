@@ -27,9 +27,9 @@ public abstract class Coche implements tieneAsientos, passengersQuantity
     }
     /*Condicional para verificar si tiene o no asientos de cuero*/
 
-    public boolean asientosDeCuero(String seatsLeather)
+    public boolean leatherSeats(String seatsLeather)
     {
-        if(seatsLeather.equals("si"))
+        if(seatsLeather.equals("yes"))
         {
             return true;
         }
@@ -38,9 +38,9 @@ public abstract class Coche implements tieneAsientos, passengersQuantity
             return false;
         }
     }
-    public int numeroPasajeros(int passengersQuantity)
+    public int passengersQuantity(int passengersQ)
     {
-        return passengersQuantity;
+        return passengersQ;
     }
 
     public int getDoorQuantity() {
