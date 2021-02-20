@@ -29,7 +29,7 @@ public class templateVehicle extends Coche implements addVehicle {
 
     @Override
     public boolean leatherSeats(String seatsLeather) {
-        if (seatsLeather.equals("si")) {
+        if (seatsLeather.equals("yes")) {
             return true;
         } else {
             return false;

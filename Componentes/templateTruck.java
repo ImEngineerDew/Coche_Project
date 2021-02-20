@@ -44,7 +44,7 @@ public class templateTruck extends Coche implements addTruck, removeTruck{
 
     @Override
     public boolean leatherSeats(String seatsLeather) {
-        if (seatsLeather.equals("si")) {
+        if (seatsLeather.equals("yes")) {
             return true;
         } else
         {
