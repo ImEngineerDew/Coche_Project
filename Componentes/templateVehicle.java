@@ -1,11 +1,12 @@
 package Coche_Proyecto.Componentes;
 
 import Coche_Proyecto.Interfaces.addVehicle;
+import Coche_Proyecto.Interfaces.removeCar;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class templateVehicle extends Coche implements addVehicle {
+public class templateVehicle extends Coche implements addVehicle, removeCar {
 
     private String esPublico;
     private ArrayList<templateVehicle> carModel = new ArrayList<>();
@@ -16,9 +17,10 @@ public class templateVehicle extends Coche implements addVehicle {
         addCar.add(addition);
     }
 
-    private void removeCar(templateVehicle removingCar)
+    @Override
+    public void removeCarType(templateVehicle delete)
     {
-        carModel.remove(removingCar);
+        removeC.remove(delete);
     }
 
     public templateVehicle() {
@@ -98,8 +100,7 @@ public class templateVehicle extends Coche implements addVehicle {
                     System.out.println("Choose an element from remove by the previous list: ");
                     Scanner removeOpt = new Scanner(System.in);
                     int removeList = removeOpt.nextInt();
-
-                    carModel.remove(removeList);
+                    removeC.remove(removeList);
                     break;
 
                 case 4:

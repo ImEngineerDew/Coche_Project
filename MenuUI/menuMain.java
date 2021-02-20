@@ -8,31 +8,31 @@ public class menuMain
 {
     public static void main (String [] args)
     {
-        templateTruck camioneta = new templateTruck();
-        templateVehicle carro = new templateVehicle();
+        templateTruck truck = new templateTruck();
+        templateVehicle car = new templateVehicle();
 
         boolean exit = false;
 
         do
         {
             System.out.println("Welcome to the Toads Dewin vehicle store");
-            System.out.println("Please choose the vehilcle of your preference");
+            System.out.println("Please choose the vehicle of your preference");
             System.out.println("1. Particular car");
             System.out.println("2. Truck");
             System.out.println("3. Exit of the program");
             System.out.println("\n");
             
-            Scanner lista = new Scanner(System.in);
-            int opcion = lista.nextInt();
+            Scanner list = new Scanner(System.in);
+            int option = list.nextInt();
                         
-            switch(opcion)
+            switch(option)
             {
                 case 1:
-                    carro.getInfo();
+                    car.getInfo();
                     break;
 
                 case 2:
-                    camioneta.getInfo();
+                    truck.getInfo();
                     break;
                 case 3:
                     exit = true;
