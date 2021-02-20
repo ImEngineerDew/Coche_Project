@@ -3,20 +3,18 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
-public class templateTruck extends Coche {
+public class templateTruck extends Coche implements addCar {
     private int loadCapacity;                //Quantity of the load about of this truck
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
 
-    private ArrayList<templateTruck> truckModel = new ArrayList<>();
-
-    public void addTruck(templateTruck added) {
-       truckModel.add(added);
+    public void addCarType(addCar addition) {
+       typeCar.add(addition);
     }
 
     public void deleteTruck(templateTruck listToErase)
     {
-        truckModel.remove(listToErase);
+        addCar.remove(listToErase);
     }
 
     public templateTruck() {
