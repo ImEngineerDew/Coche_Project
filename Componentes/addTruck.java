@@ -4,5 +4,5 @@ import java.util.ArrayList;
 interface addTruck
 {
     public ArrayList<templateTruck> addT = new ArrayList<>();
-    public void addTruckType(templateTruck additon);
+    void addTruckType(templateTruck additon);
 }

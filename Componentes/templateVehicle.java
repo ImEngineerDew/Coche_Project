@@ -3,14 +3,17 @@ package Coche_Proyecto.Componentes;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class templateVehicle extends Coche {
+public class templateVehicle extends Coche implements addVehicle {
 
     private String esPublico;
     private ArrayList<templateVehicle> carModel = new ArrayList<>();
 
-    private void addCar(templateVehicle agregado) {
-        carModel.add(agregado);
+    @Override
+    public void addVehicleType(templateVehicle addition)
+    {
+        addCar.add(addition);
     }
+
 
     private void removeCar(templateVehicle removingCar)
     {
