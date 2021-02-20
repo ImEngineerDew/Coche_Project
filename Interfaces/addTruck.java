@@ -1,7 +1,8 @@
-package Coche_Proyecto.Componentes;
+package Coche_Proyecto.Interfaces;
+import Coche_Proyecto.Componentes.templateTruck;
 import java.util.ArrayList;
 
-interface addTruck
+public interface addTruck
 {
     public ArrayList<templateTruck> addT = new ArrayList<>();
     void addTruckType(templateTruck additon);

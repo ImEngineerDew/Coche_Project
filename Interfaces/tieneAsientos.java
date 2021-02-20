@@ -1,4 +1,4 @@
-package Coche_Proyecto.Componentes;
+package Coche_Proyecto.Interfaces;
 
 public interface tieneAsientos
 {

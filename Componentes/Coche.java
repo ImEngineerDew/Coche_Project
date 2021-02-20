@@ -1,5 +1,8 @@
 package Coche_Proyecto.Componentes;
 
+import Coche_Proyecto.Interfaces.passengersQuantity;
+import Coche_Proyecto.Interfaces.tieneAsientos;
+
 public abstract class Coche implements tieneAsientos, passengersQuantity
 {
     private int doorQuantity;

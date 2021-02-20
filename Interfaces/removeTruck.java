@@ -1,8 +1,10 @@
-package Coche_Proyecto.Componentes;
+package Coche_Proyecto.Interfaces;
+import Coche_Proyecto.Componentes.templateTruck;
+
 import java.util.ArrayList;
 
 
-interface removeTruck
+public interface removeTruck
 {
     /*Space for the Truck model*/
     public ArrayList<templateTruck> removeT = new ArrayList<>();

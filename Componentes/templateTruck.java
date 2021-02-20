@@ -1,7 +1,10 @@
 package Coche_Proyecto.Componentes;
+import Coche_Proyecto.Interfaces.addTruck;
+import Coche_Proyecto.Interfaces.removeTruck;
+
 import java.util.Scanner;
 
-public class templateTruck extends Coche implements addTruck, removeTruck{
+public class templateTruck extends Coche implements addTruck, removeTruck {
     private int loadCapacity;                //Quantity of the load about of this truck
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
