@@ -1,26 +1,23 @@
 package Coche_Proyecto.Componentes;
 
-import Coche_Proyecto.Interfaces.addVehicle;
-import Coche_Proyecto.Interfaces.removeCar;
+import Coche_Proyecto.Interfaces.carItem;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class templateVehicle extends Coche implements addVehicle, removeCar {
+public class templateVehicle extends Coche implements carItem {
 
     private String esPublico;
-    private ArrayList<templateVehicle> carModel = new ArrayList<>();
 
     @Override
     public void addVehicleType(templateVehicle addition)
     {
-        addCar.add(addition);
+        carType.add(addition);
     }
 
-    @Override
-    public void removeCarType(templateVehicle delete)
+    public void removeVehicleType(templateVehicle delete)
     {
-        removeC.remove(delete);
+        carType.remove(delete);
     }
 
     public templateVehicle() {
@@ -84,13 +81,13 @@ public class templateVehicle extends Coche implements addVehicle, removeCar {
                     doors = Integer.parseInt(doorsString);
 
                     templateVehicle car = new templateVehicle(doors, tires, fuel, brand, leather);
-                    addCar.add(car);
+                    carItem.carType.add(car);
                     break;
 
                 case 2:
                     System.out.println("Car list info: ");
                     System.out.println("\n");
-                    for (templateVehicle cochecito : addCar) {
+                    for (templateVehicle cochecito : carType) {
                         System.out.println(cochecito.getBrandCar() + "\t" + cochecito.getFuelMotor()
                                 + "\t" + cochecito.getTiresQuantity() + "\t" + cochecito.getDoorQuantity());
                     }
@@ -100,7 +97,7 @@ public class templateVehicle extends Coche implements addVehicle, removeCar {
                     System.out.println("Choose an element from remove by the previous list: ");
                     Scanner removeOpt = new Scanner(System.in);
                     int removeList = removeOpt.nextInt();
-                    removeC.remove(removeList);
+                    carType.remove(removeList);
                     break;
 
                 case 4:

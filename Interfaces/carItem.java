@@ -3,8 +3,10 @@ import Coche_Proyecto.Componentes.templateVehicle;
 
 import java.util.ArrayList;
 
-public interface addVehicle
+public interface carItem
 {
-    ArrayList<templateVehicle> addCar= new ArrayList<>();
+    ArrayList<templateVehicle> carType= new ArrayList<>();
+
     void addVehicleType(templateVehicle additon);
+    void removeVehicleType(templateVehicle delete);
 }
