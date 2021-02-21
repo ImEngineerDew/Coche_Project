@@ -1,10 +1,9 @@
 package Coche_Proyecto.Componentes;
-import Coche_Proyecto.Interfaces.addTruck;
-import Coche_Proyecto.Interfaces.removeTruck;
-
+import Coche_Proyecto.Interfaces.truckItem;
 import java.util.Scanner;
 
-public class templateTruck extends Coche implements addTruck, removeTruck {
+public class templateTruck extends Coche implements truckItem
+{
     private int loadCapacity;                //Quantity of the load about of this truck
     private int passengersQuantity;          //Quantity of seats on this truck
     private String typeLoad;
@@ -12,18 +11,18 @@ public class templateTruck extends Coche implements addTruck, removeTruck {
     @Override
     public void addTruckType(templateTruck addition)
     {
-        addT.add(addition);
+        truckType.add(addition);
     }
     @Override
     public void removeTruckType(templateTruck delete)
     {
-        removeT.remove(delete);
+        truckType.remove(delete);
     }
 
     public templateTruck() {
         super();
-        this.loadCapacity = 4;               /*Capacidad en volumen*/
-        this.typeLoad = "Ganado";
+        this.loadCapacity = 4;               /*Volume capacity*/
+        this.typeLoad = "Cattle";
     }
 
     public templateTruck(int doorQuantity, int tiresQuantity, String fuelMotor, String brandCar, String seatsLeather, int loadCapacity, String typeLoad) {
@@ -75,42 +74,42 @@ public class templateTruck extends Coche implements addTruck, removeTruck {
             switch(opt)
             {
                 case 1:
-                    Scanner objeto = new Scanner(System.in);
-                    Scanner objetoNum = new Scanner(System.in);
+                    Scanner object = new Scanner(System.in);
+                    Scanner objectNum = new Scanner(System.in);
 
                     System.out.println("Creating the truck...");
 
                     System.out.println("Please write the brand of the car: ");
-                    brand = objeto.nextLine();
+                    brand = object.nextLine();
                     System.out.println("Which kind of the fuel has the car?: ");
-                    fuel = objeto.nextLine();
+                    fuel = object.nextLine();
                     System.out.println("Has the truck the leather seats? :");
-                    leather = objeto.nextLine();
+                    leather = object.nextLine();
                     System.out.println("Please write the quantity of tires: ");
-                    tiresString = objetoNum.nextLine();
+                    tiresString = object.nextLine();
                     System.out.println("Please write the number of doors: ");
-                    doorsString = objetoNum.nextLine();
-                    System.out.println("Please wite the quantity of load: ");
-                    loadString = objetoNum.nextLine();
+                    doorsString = object.nextLine();
+                    System.out.println("Please write the quantity of load: ");
+                    loadString = object.nextLine();
                     System.out.println("Please write the kind of load: ");
-                    typeString = objeto.nextLine();
+                    typeString = object.nextLine();
 
                     tires = Integer.parseInt(tiresString);
                     doors = Integer.parseInt(doorsString);
                     load  = Integer.parseInt(loadString);
 
-                    templateTruck camion = new templateTruck(doors,tires,fuel,brand,leather,load,typeString);
-                    addT.add(camion);
+                    templateTruck truckKind = new templateTruck(doors,tires,fuel,brand,leather,load,typeString);
+                    truckType.add(truckKind);
                     break;
 
                 case 2:
                     System.out.println("Truck list info: ");
                     System.out.println("\n");
-                    for(templateTruck lista: addT)
+                    for(templateTruck list: truckType)
                     {
-                        System.out.println(lista.getBrandCar()+"\t"+lista.getLoadCapacity()
-                                +"\t"+lista.getTypeLoad()+"\t"+lista.getFuelMotor()+"\t"
-                                +"\t"+lista.getDoorQuantity()+"\t"+lista.getTiresQuantity());
+                        System.out.println(list.getBrandCar()+"\t"+list.getLoadCapacity()
+                                +"\t"+list.getTypeLoad()+"\t"+list.getFuelMotor()+"\t"
+                                +"\t"+list.getDoorQuantity()+"\t"+list.getTiresQuantity());
                     }
                     break;
 
@@ -118,7 +117,7 @@ public class templateTruck extends Coche implements addTruck, removeTruck {
                     System.out.println("Choose an element from remove by the previous list: ");
                     Scanner removeOpt = new Scanner(System.in);
                     int removeList = removeOpt.nextInt();
-                    removeT.remove(removeList);
+                    truckType.remove(removeList);
                     break;
 
                 case 4:

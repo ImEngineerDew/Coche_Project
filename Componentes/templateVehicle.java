@@ -1,9 +1,6 @@
 package Coche_Proyecto.Componentes;
-
 import Coche_Proyecto.Interfaces.carItem;
-
 import java.util.Scanner;
-import java.util.ArrayList;
 
 public class templateVehicle extends Coche implements carItem {
 
@@ -47,7 +44,7 @@ public class templateVehicle extends Coche implements carItem {
         String brand, fuel, leather, tiresString, doorsString;
         int tires, doors;
 
-        boolean salir = false;
+        boolean exit = false;
 
         do{
             System.out.println("You're selected the car option, please choose the number: ");
@@ -87,9 +84,9 @@ public class templateVehicle extends Coche implements carItem {
                 case 2:
                     System.out.println("Car list info: ");
                     System.out.println("\n");
-                    for (templateVehicle cochecito : carType) {
-                        System.out.println(cochecito.getBrandCar() + "\t" + cochecito.getFuelMotor()
-                                + "\t" + cochecito.getTiresQuantity() + "\t" + cochecito.getDoorQuantity());
+                    for (templateVehicle littleCar : carType) {
+                        System.out.println(littleCar.getBrandCar() + "\t" + littleCar.getFuelMotor()
+                                + "\t" + littleCar.getTiresQuantity() + "\t" + littleCar.getDoorQuantity());
                     }
                     break;
 
@@ -101,9 +98,9 @@ public class templateVehicle extends Coche implements carItem {
                     break;
 
                 case 4:
-                    salir = true;
+                    exit = true;
                     break;
             }
-        }while(!salir);
+        }while(!exit);
     }
 }

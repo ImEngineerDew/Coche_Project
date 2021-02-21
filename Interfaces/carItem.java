@@ -7,6 +7,6 @@ public interface carItem
 {
     ArrayList<templateVehicle> carType= new ArrayList<>();
 
-    void addVehicleType(templateVehicle additon);
+    void addVehicleType(templateVehicle addition);
     void removeVehicleType(templateVehicle delete);
 }
