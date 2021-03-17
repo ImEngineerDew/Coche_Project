@@ -78,7 +78,7 @@ public class templateVehicle extends Coche implements carItem {
                     doors = Integer.parseInt(doorsString);
 
                     templateVehicle car = new templateVehicle(doors, tires, fuel, brand, leather);
-                    carItem.carType.add(car);
+                    carType.add(car);
                     break;
 
                 case 2:
