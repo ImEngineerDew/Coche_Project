@@ -26,14 +26,15 @@ public class templateVehicle extends Coche implements carItem,  tieneAsientos {
 
     public boolean leatherSeats(String seatsLeather)
     {
-    if (seatsLeather.equals("yes"))
-    {
-         return true;
-    }
-    else
-    {    return false;
+        if (seatsLeather.equals("yes"))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
 
-    }
+        }
     }
 
     @Override
