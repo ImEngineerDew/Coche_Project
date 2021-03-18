@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class templateVehicle extends Coche implements carItem,  tieneAsientos {
 
-    private String esPublico;
-
     @Override
     public void addVehicleType(templateVehicle addition)
     {
