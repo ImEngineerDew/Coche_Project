@@ -1,8 +1,9 @@
 package Coche_Proyecto.Componentes;
 import Coche_Proyecto.Interfaces.carItem;
+import Coche_Proyecto.Interfaces.tieneAsientos;
 import java.util.Scanner;
 
-public class templateVehicle extends Coche implements carItem {
+public class templateVehicle extends Coche implements carItem,  tieneAsientos {
 
     private String esPublico;
 
@@ -25,13 +26,16 @@ public class templateVehicle extends Coche implements carItem {
         super(doorQuantity, tiresQuantity, fuelMotor, brandCar, seatsLeather);
     }
 
-    @Override
-    public boolean leatherSeats(String seatsLeather) {
-        if (seatsLeather.equals("yes")) {
-            return true;
-        } else {
-            return false;
-        }
+    public boolean leatherSeats(String seatsLeather)
+    {
+    if (seatsLeather.equals("yes"))
+    {
+         return true;
+    }
+    else
+    {    return false;
+
+    }
     }
 
     @Override
