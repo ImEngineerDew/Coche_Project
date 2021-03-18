@@ -39,8 +39,8 @@ public class templateVehicle extends Coche implements carItem,tieneAsientos,pass
     }
 
     @Override
-    public int passengersQuantity(int passengersQuantity) {
-        return passengersQuantity;
+    public int passengersQuantity(int passengersQ) {
+        return passengersQ;
     }
 
     @Override
