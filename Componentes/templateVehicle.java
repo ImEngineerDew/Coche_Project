@@ -1,9 +1,10 @@
 package Coche_Proyecto.Componentes;
 import Coche_Proyecto.Interfaces.carItem;
 import Coche_Proyecto.Interfaces.tieneAsientos;
+import Coche_Proyecto.Interfaces.passengersQuantity;
 import java.util.Scanner;
 
-public class templateVehicle extends Coche implements carItem,  tieneAsientos {
+public class templateVehicle extends Coche implements carItem,tieneAsientos,passengersQuantity {
 
     @Override
     public void addVehicleType(templateVehicle addition)

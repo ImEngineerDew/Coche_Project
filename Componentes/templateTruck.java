@@ -1,12 +1,13 @@
 package Coche_Proyecto.Componentes;
 import Coche_Proyecto.Interfaces.truckItem;
+import Coche_Proyecto.Interfaces.passengersQuantity;
+import Coche_Proyecto.Interfaces.tieneAsientos;
 import java.util.Scanner;
 
-public class templateTruck extends Coche implements truckItem
+public class templateTruck extends Coche implements truckItem, passengersQuantity,tieneAsientos
 {
     private int loadCapacity;                //Quantity of the load about of this truck
-    private int passengersQuantity;          //Quantity of seats on this truck
-    private String typeLoad;
+     private String typeLoad;
 
     @Override
     public void addTruckType(templateTruck addition)
@@ -40,15 +41,18 @@ public class templateTruck extends Coche implements truckItem
     }
 
     @Override
-    public int passengersQuantity(int passengersQuantity) {
-        return passengersQuantity;
+    public int passengersQuantity(int passengersQ) {
+        return passengersQ;
     }
 
     @Override
-    public boolean leatherSeats(String seatsLeather) {
-        if (seatsLeather.equals("yes")) {
+    public boolean leatherSeats(String seatsLeather)
+    {
+        if (seatsLeather.equals("yes"))
+        {
             return true;
-        } else
+        }
+            else
         {
             return false;
         }
