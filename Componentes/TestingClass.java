@@ -38,10 +38,7 @@ public class TestingClass
 
         truckKind.addTruckType(camion);
 
-        for(int i=0; i<5;i++)
-        {
-            System.out.println(camion);
-        }
+        camion.getInfo();
     }
 
 
