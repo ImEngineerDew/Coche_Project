@@ -78,6 +78,7 @@ public class templateTruck extends Coche implements truckItem, passengersQuantit
             switch(opt)
             {
                 case 1:
+                    /*
                     Scanner object = new Scanner(System.in);
                     Scanner objectNum = new Scanner(System.in);
 
@@ -104,6 +105,7 @@ public class templateTruck extends Coche implements truckItem, passengersQuantit
 
                     templateTruck truckKind = new templateTruck(doors,tires,fuel,brand,leather,load,typeString);
                     truckType.add(truckKind);
+                    */
                     break;
 
                 case 2:
