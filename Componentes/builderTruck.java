@@ -2,7 +2,7 @@ package Coche_Proyecto.Componentes;
 import java.util.Scanner;
 import static Coche_Proyecto.Interfaces.truckItem.truckType;
 
-public class builderTruck extends Coche
+public class builderTruck
 {
     public void getInfo()
     {

@@ -2,7 +2,7 @@ package Coche_Proyecto.Componentes;
 import Coche_Proyecto.Interfaces.passengersQuantity;
 import Coche_Proyecto.Interfaces.tieneAsientos;
 
-public abstract class Coche implements tieneAsientos, passengersQuantity
+public class Coche implements tieneAsientos, passengersQuantity
 {
     private int doorQuantity;
     private int tiresQuantity;
@@ -78,7 +78,5 @@ public abstract class Coche implements tieneAsientos, passengersQuantity
     {
         this.brandCar = brandCar;
     }
-
-    public abstract void getInfo();
 
 }

@@ -36,6 +36,4 @@ public class templateVehicle extends Coche implements carItem,tieneAsientos,pass
     public int passengersQuantity(int passengersQ) {
         return passengersQ;
     }
-
-    public void getInfo(){}
 }

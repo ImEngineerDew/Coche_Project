@@ -57,7 +57,4 @@ public class templateTruck extends Coche implements truckItem, passengersQuantit
             return false;
         }
     }
-
-    @Override
-    public void getInfo(){}
 }

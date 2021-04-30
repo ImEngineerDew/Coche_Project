@@ -1,6 +1,5 @@
 package Coche_Proyecto.MenuUI;
-import Coche_Proyecto.Componentes.templateTruck;
-import Coche_Proyecto.Componentes.templateVehicle;
+import Coche_Proyecto.Componentes.builderTruck;
 
 import java.util.Scanner;
 
@@ -8,9 +7,7 @@ public class menuMain
 {
     public static void main (String [] args)
     {
-        templateTruck truck = new templateTruck();
-        templateVehicle car = new templateVehicle();
-
+        builderTruck truck = new builderTruck();
         boolean exit = false;
 
         /*This is a random line*/
