@@ -45,7 +45,8 @@ public abstract class Coche implements tieneAsientos, passengersQuantity
         return passengersQ;
     }
 
-    public int getDoorQuantity() {
+    public int getDoorQuantity()
+    {
         return doorQuantity;
     }
 
