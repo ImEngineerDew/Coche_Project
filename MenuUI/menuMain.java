@@ -1,4 +1,5 @@
 package Coche_Proyecto.MenuUI;
+import Coche_Proyecto.Componentes.builderTruck;
 import Coche_Proyecto.Componentes.templateTruck;
 import Coche_Proyecto.Componentes.templateVehicle;
 
