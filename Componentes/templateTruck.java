@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class templateTruck extends Coche implements truckItem, passengersQuantity,tieneAsientos
 {
     private int loadCapacity;                //Quantity of the load about of this truck
-     private String typeLoad;
+    private String typeLoad;
 
     @Override
     public void addTruckType(templateTruck addition)
