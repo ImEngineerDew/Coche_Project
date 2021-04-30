@@ -1,11 +1,10 @@
 package Coche_Proyecto.Componentes;
 import java.util.Scanner;
-
 import static Coche_Proyecto.Interfaces.truckItem.truckType;
 
-public abstract class builderTruck
+public class builderTruck extends Coche
 {
-    public void getInfoTruck()
+    public void getInfo()
     {
             templateTruck truck = new templateTruck();
 
@@ -68,7 +67,7 @@ public abstract class builderTruck
                         System.out.println("Choose an element from remove by the previous list: ");
                         Scanner removeOpt = new Scanner(System.in);
                         int removeList = removeOpt.nextInt();
-                        truck.removeTruckType(removeList);
+                        truckType.remove(removeList);
                         break;
 
                     case 4:

@@ -1,5 +1,4 @@
 package Coche_Proyecto.MenuUI;
-import Coche_Proyecto.Componentes.builderTruck;
 import Coche_Proyecto.Componentes.templateTruck;
 import Coche_Proyecto.Componentes.templateVehicle;
 
@@ -34,7 +33,7 @@ public class menuMain
                     break;
 
                 case 2:
-
+                    truck.getInfo();
                     break;
                 case 3:
                     exit = true;
