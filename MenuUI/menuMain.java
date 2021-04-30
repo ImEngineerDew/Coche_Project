@@ -29,7 +29,8 @@ public class menuMain
             switch(option)
             {
                 case 1:
-                    car.getInfo();
+                    templateTruck truckNew = new templateTruck();
+                    //car.getInfo();
                     break;
 
                 case 2:
