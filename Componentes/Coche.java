@@ -78,6 +78,4 @@ public abstract class Coche implements tieneAsientos, passengersQuantity
     {
         this.brandCar = brandCar;
     }
-
-    public abstract void getInfo();
 }
