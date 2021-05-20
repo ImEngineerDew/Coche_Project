@@ -1,5 +1,6 @@
 package Coche_Proyecto.MenuUI;
 import Coche_Proyecto.Componentes.builderTruck;
+import Coche_Proyecto.Componentes.builderCar;
 
 import java.util.Scanner;
 
@@ -8,6 +9,7 @@ public class menuMain
     public static void main (String [] args)
     {
         builderTruck truck = new builderTruck();
+        builderCar   car   = new builderCar();
         boolean exit = false;
 
         /*This is a random line*/
@@ -26,7 +28,7 @@ public class menuMain
             switch(option)
             {
                 case 1:
-                    //car.getInfo();
+                    car.getInfo();
                     break;
 
                 case 2:
