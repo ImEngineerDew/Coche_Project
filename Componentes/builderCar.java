@@ -6,7 +6,7 @@ public class builderCar
 {
     public void getInfo()
     {
-        templateVehicle car = new templateVehicle();
+        templateCar car = new templateCar();
 
         String brand, fuel, leather, tiresString, doorsString;
         int tires, doors;
@@ -43,14 +43,14 @@ public class builderCar
                     tires = Integer.parseInt(tiresString);
                     doors = Integer.parseInt(doorsString);
 
-                    templateVehicle carNew = new templateVehicle(doors, tires, fuel, brand, leather);
+                    templateCar carNew = new templateCar(doors, tires, fuel, brand, leather);
                     car.addVehicleType(carNew);
                     break;
 
                 case 2:
                     System.out.println("Car list info: ");
                     System.out.println("\n");
-                    for (templateVehicle littleCar : carType) {
+                    for (templateCar littleCar : carType) {
                         System.out.println(littleCar.getBrandCar() + "\t" + littleCar.getFuelMotor()
                                 + "\t" + littleCar.getTiresQuantity() + "\t" + littleCar.getDoorQuantity());
                     }

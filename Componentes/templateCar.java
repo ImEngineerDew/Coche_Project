@@ -4,22 +4,23 @@ import Coche_Proyecto.Interfaces.tieneAsientos;
 import Coche_Proyecto.Interfaces.passengersQuantity;
 import java.util.Scanner;
 
-public class templateVehicle extends Coche implements carItem,tieneAsientos,passengersQuantity {
+public class templateCar extends Coche implements carItem,tieneAsientos,passengersQuantity {
 
     @Override
-    public void addVehicleType(templateVehicle addition) {
+    public void addVehicleType(templateCar addition) {
         carType.add(addition);
     }
 
-    public void removeVehicleType(templateVehicle delete) {
+    @Override
+    public void removeVehicleType(templateCar delete) {
         carType.remove(delete);
     }
 
-    public templateVehicle() {
+    public templateCar() {
         super();
     }
 
-    public templateVehicle(int doorQuantity, int tiresQuantity, String fuelMotor, String brandCar, String seatsLeather) {
+    public templateCar(int doorQuantity, int tiresQuantity, String fuelMotor, String brandCar, String seatsLeather) {
         super(doorQuantity, tiresQuantity, fuelMotor, brandCar, seatsLeather);
     }
 

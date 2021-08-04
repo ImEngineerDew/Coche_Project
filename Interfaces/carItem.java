@@ -1,12 +1,12 @@
 package Coche_Proyecto.Interfaces;
-import Coche_Proyecto.Componentes.templateVehicle;
+import Coche_Proyecto.Componentes.templateCar;
 
 import java.util.ArrayList;
 
 public interface carItem
 {
-    ArrayList<templateVehicle> carType= new ArrayList<>();
+    ArrayList<templateCar> carType= new ArrayList<>();
 
-    void addVehicleType(templateVehicle addition);
-    void removeVehicleType(templateVehicle delete);
+    void addVehicleType(templateCar addition);
+    void removeVehicleType(templateCar delete);
 }
