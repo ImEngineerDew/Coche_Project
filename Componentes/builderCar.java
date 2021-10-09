@@ -60,7 +60,7 @@ public class builderCar
                     System.out.println("Choose an element from remove by the previous list: ");
                     Scanner removeOpt = new Scanner(System.in);
                     int removeList = removeOpt.nextInt();
-                    carType.remove(removeList);
+                    //car.removeVehicleType(carNew);
                     break;
 
                 case 4:

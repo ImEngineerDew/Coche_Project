@@ -15,9 +15,9 @@ public class templateTruck extends Coche implements truckItem, passengersQuantit
         truckType.add(addition);
     }
     @Override
-    public void removeTruckType(templateTruck delete)
+    public void removeTruckType(templateTruck addition)
     {
-        truckType.remove(delete);
+        truckType.remove(addition);
     }
 
     public templateTruck() {
