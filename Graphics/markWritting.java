@@ -18,14 +18,17 @@ public class markWritting
             setSize(800,600);
             setLocation(400,300);
             setTitle("Programa");
+            sheet sheetKind = new sheet();
+            add(sheetKind);
         }
     }
 
-    class sheet extends JFrame
+    class sheet extends JPanel
     {
-        public sheet()
+        public void paintComponent(Graphics g)
         {
-            
+            super.paintComponent(g);
+            g.drawString("Dewin Acosta",100,100);       //Coordenadas y texto en la ventana
         }
     }
 
