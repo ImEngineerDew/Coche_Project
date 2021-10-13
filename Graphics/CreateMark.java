@@ -18,11 +18,13 @@ class myMark extends JFrame
     {
        Toolkit myScreen = Toolkit.getDefaultToolkit();
        Dimension tamanioPantalla = myScreen.getScreenSize();
+       Image myIcon = myScreen.getImage("Graphics/Polish Eagle.jpg" );
 
        int alturaPantalla = tamanioPantalla.height;
        int anchoPantalla = tamanioPantalla.width;
        setSize(anchoPantalla/2,alturaPantalla/2);
        setLocation(anchoPantalla/4,alturaPantalla/4);
        setTitle("My application");
+       setIconImage(myIcon);
     }
 }
