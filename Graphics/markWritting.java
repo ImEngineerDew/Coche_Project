@@ -28,7 +28,16 @@ public class markWritting
         public void paintComponent(Graphics g)
         {
             super.paintComponent(g);
-            g.drawString("Dewin Acosta",100,100);       //Coordenadas y texto en la ventana
+            //g.drawString("Dewin Acosta",100,100);       //Coordenadas y texto en la ventana
+            Graphics2D g2 = (Graphics2D)g;
+            Font myFont = new Font("Arial",Font.ITALIC,26);
+            g2.setColor(Color.BLUE);
+            g2.setFont(myFont);
+            g2.drawString("Dewin Acosta",0,50);
+
+            g2.setFont(new Font("Arial",Font.BOLD,26));
+            g2.setColor(new Color(128,95,50));
+            g2.drawString("Nacionalidad: Colombiana",0,100);
         }
     }
 
