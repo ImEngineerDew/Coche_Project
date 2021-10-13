@@ -22,9 +22,9 @@ class myMark extends JFrame
 
        int alturaPantalla = tamanioPantalla.height;
        int anchoPantalla = tamanioPantalla.width;
-       setSize(anchoPantalla/2,alturaPantalla/2);
-       setLocation(anchoPantalla/4,alturaPantalla/4);
-       setTitle("My application");
+       setSize(anchoPantalla/2,alturaPantalla/2);       //Configurar el tamaño de la ventana
+       setLocation(anchoPantalla/4,alturaPantalla/4);         //Poner la ubicación de la ventana
+       setTitle("My application");                                  //Título de la aplicación.
        setIconImage(myIcon);
     }
 }
