@@ -1,10 +1,10 @@
-package com.toadsdewin.FootballLeague;
+package com.toadsdewin.carConcesionary;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FootballLeagueApplicationTests {
+class carConcesionaryApplicationTests {
 
 	@Test
 	void contextLoads() {

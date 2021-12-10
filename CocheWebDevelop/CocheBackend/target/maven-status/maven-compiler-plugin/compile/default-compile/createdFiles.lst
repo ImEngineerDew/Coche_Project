@@ -1,9 +1,5 @@
-com\toadsdewin\FootballLeague\controllers\UserController.class
-com\toadsdewin\FootballLeague\controllers\TeamController.class
-com\toadsdewin\FootballLeague\controllers\MatchController.class
-com\toadsdewin\FootballLeague\utils\BCrypt.class
-com\toadsdewin\FootballLeague\services\UserService.class
-com\toadsdewin\FootballLeague\ServletInitializer.class
-com\toadsdewin\FootballLeague\services\MatchService.class
-com\toadsdewin\FootballLeague\FootballLeagueApplication.class
-com\toadsdewin\FootballLeague\utils\Autorization.class
+com\toadsdewin\CocheBackend\CocheBackendApplication.class
+com\toadsdewin\CocheBackend\ServletInitializer.class
+com\toadsdewin\carConcesionary\models\UserModel.class
+com\toadsdewin\carConcesionary\models\CarModel.class
+com\toadsdewin\carConcesionary\models\BrandModel.class

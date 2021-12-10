@@ -1,13 +1,13 @@
-package com.toadsdewin.FootballLeague;
+package com.toadsdewin.CocheBackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CarConcesonary {
+public class CocheBackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarConcesonary.class, args);
+		SpringApplication.run(CocheBackendApplication.class, args);
 	}
 
 }

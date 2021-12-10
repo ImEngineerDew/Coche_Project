@@ -1,4 +1,4 @@
-package com.toadsdewin.FootballLeague.models;
+package com.toadsdewin.carConcesionary.models;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
