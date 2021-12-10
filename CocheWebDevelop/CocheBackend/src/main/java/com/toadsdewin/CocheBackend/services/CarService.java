@@ -1,8 +1,6 @@
 package com.toadsdewin.CocheBackend.services;
 import com.toadsdewin.CocheBackend.models.CarModel;
-import com.toadsdewin.CocheBackend.models.UserModel;
 import com.toadsdewin.CocheBackend.repositories.CarRepository;
-import com.toadsdewin.CocheBackend.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
