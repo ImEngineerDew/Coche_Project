@@ -17,6 +17,10 @@ public class CarService {
         this.carRepository.save(car);
     }
 
+    public CarModel findCar(String id)
+    {
+        return this.carRepository.findById(id).orElse(new CarModel());
+    }
     public List<CarModel> getCar() {
         return this.carRepository.findAll();
     }
