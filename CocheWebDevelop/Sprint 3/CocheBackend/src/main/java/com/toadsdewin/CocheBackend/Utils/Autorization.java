@@ -25,8 +25,7 @@ public class Autorization implements Filter
         String url =httpServletRequest.getRequestURI();
 
         //Let's show if the following directions is going to be public
-        if(url.contains ("/api/brands") || url.contains("/api/users") || url.contains("/api/users/login")
-                || url.contains("/api/cars") || url.contains ("index"))
+        if(url.contains("/api/brands")|| url.contains("/api/users") || url.contains("/api/users/login")|| url.contains ("index"))
         {
             chain.doFilter(request,response);
         }
@@ -44,7 +43,7 @@ public class Autorization implements Filter
             {
                 //Private routes (only by Token)
                 Jws<Claims> claims=Jwts.parser().setSigningKey(KEY).parseClaimsJws(hash);
-                if((url.contains("/api/brands"))||(url.contains("/api/check")||url.contains("/api/cars")||url.contains("/api/users"))&&(!claims.getBody().get("username").equals(""))){
+                if((url.contains("/api/cars")||url.contains("/api/brands"))&&(!claims.getBody().get("username").equals(""))){
                     chain.doFilter(request, response);
                 }
             }catch (Exception e)
