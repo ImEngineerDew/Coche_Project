@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.toadsdewin</groupId>
-	<artifactId>FootballLeague</artifactId>
+	<artifactId>CocheBackend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>FootballLeague</name>
-	<description>This is the main project about of Footbal league</description>
+	<name>CocheBackend</name>
+	<description>This is the main project about of Car Concesioanry</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -71,14 +71,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>16</source>
-					<target>16</target>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

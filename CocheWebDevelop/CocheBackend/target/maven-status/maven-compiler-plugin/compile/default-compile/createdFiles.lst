@@ -1,5 +1,8 @@
 com\toadsdewin\CocheBackend\CocheBackendApplication.class
+com\toadsdewin\CocheBackend\models\BrandModel.class
+com\toadsdewin\CocheBackend\repositories\UserRepository.class
+com\toadsdewin\CocheBackend\controllers\UserController.class
+com\toadsdewin\CocheBackend\models\UserModel.class
 com\toadsdewin\CocheBackend\ServletInitializer.class
-com\toadsdewin\carConcesionary\models\UserModel.class
-com\toadsdewin\carConcesionary\models\CarModel.class
-com\toadsdewin\carConcesionary\models\BrandModel.class
+com\toadsdewin\CocheBackend\services\UsersService.class
+com\toadsdewin\CocheBackend\models\CarModel.class

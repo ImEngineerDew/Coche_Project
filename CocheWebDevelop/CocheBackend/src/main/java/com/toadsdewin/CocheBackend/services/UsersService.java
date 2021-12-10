@@ -2,12 +2,13 @@ package com.toadsdewin.CocheBackend.services;
 import com.toadsdewin.CocheBackend.models.UserModel;
 import com.toadsdewin.CocheBackend.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class UsersService {
     @Autowired
     UserRepository userRepository;
 
@@ -32,5 +33,4 @@ public class UserService {
     {
         userRepository.deleteById(id);
     }
-
 }

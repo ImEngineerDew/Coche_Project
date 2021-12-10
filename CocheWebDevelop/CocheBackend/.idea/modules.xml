@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FootballLeague.iml" filepath="$PROJECT_DIR$/FootballLeague.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CocheBackend.iml" filepath="$PROJECT_DIR$/CocheBackend.iml" />
     </modules>
   </component>
 </project>
