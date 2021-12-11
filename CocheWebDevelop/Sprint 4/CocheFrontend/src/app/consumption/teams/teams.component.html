@@ -1,0 +1,8 @@
+<div class = "d-flex">
+  <div class = "container">
+   <app-list [dato]= "cars"></app-list>
+</div>
+<div class = "container">
+  <app-add (onNewCar) = "saveCars( $event )"> </app-add>
+</div>
+

@@ -1,0 +1,41 @@
+<h1 style="text-align: center"><strong>Registry formulary</strong></h1>
+  <form [formGroup] = "CarForm" (ngSubmit) = "send()">
+    <div class = "mb-3">
+      <label for="form-label"><strong>ID:</strong></label>
+      <input type = "text" formControlName = "id" placeholder= "Please write the brand ID" class = "form-control">  
+    </div>
+  <div class = "mb-3">
+    <label class="form-label"><strong>Brand name:</strong></label>
+      <input type="text" formControlName = "name" placeholder="Write the brand name" class="form-control">
+  </div>
+  <div class = "mb-3">
+    <label class="form-label"><strong>Model:</strong></label>
+      <input type="text" formControlName = "modelCar" placeholder="Write the model name" class="form-control">
+  </div>
+  <div class = "mb-3">
+    <label class="form-label">Age model:</label>
+      <input type="text" formControlName = "ageModel" placeholder="Write the model age" class="form-control">
+  </div>
+
+  <style>
+    .container {
+      height: 50px;
+      position: relative;
+        }
+    
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    </style>
+    
+    <div class="container">
+      <div class="center">
+        <button class="submit" class = "btn btn-success">Save brand</button>
+      </div>
+    </div>   
+  </form>
